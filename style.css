@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* overflow-x: hidden; */
+}
+
+:root,
+[data-bs-theme=light] {
+  --bs-choco: rgb(236, 168, 119);
+  --bs-beige: beige;
+  --bs-brown: brown;
+}
+
+/* Navigation Start */
+
+nav {
+  background-color: transparent;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: white;
+  transition: 1s;
+}
+
+.nav-link {
+  font-size: 18px;
+  margin-inline: 10px;
+  color: white;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--bs-choco);
+}
+
+.navbar-brand:hover {
+  color: var(--bs-choco);
+  transform: rotateZ(15deg) scale(1.1);
+}
+
+nav ul li .after::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  position: absolute;
+  left: 7px;
+  bottom: -2px;
+  background-color: rgb(204, 167, 130);
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+nav .after:hover::after {
+  width: 80%;
+}
+
+/* Navigation End */
+
+/* Carousel Start */
+.car-1 {
+  background-image: url(Images/cloth2-hero-edit.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Carousel End */
+
+/* Infinite Carousel Start */
+/* Infinite Carousel End */
+
+/* Product Section Start*/
+.chef_heading {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.chef_heading h1 {
+    color: rgb(41, 41, 41);
+    /* font-weight: 800; */
+    font-size: 40px;
+    /* letter-spacing: 2px; */
+}
+
+
+.chef_section {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;   
+}
+
+.chef{
+    width: 300px;
+    overflow: hidden;
+}
+
+.chef .chef_pic img {
+    height: 450px;
+    width: 300px;
+    transition: 0.5s;
+
+}
+
+.chef_pic{
+    overflow: hidden;
+    position: relative;
+}
+
+.chef .chef_pic:hover .prod-btn-hov {
+    /* display: block; */
+}
+
+.prod-btn-hov{
+  background-color: var(--bs-choco);
+  color: white;
+  border-radius: 0;
+  padding: 12px 30px;
+  position: absolute;
+  top: -250px;
+  left: 80px;
+  /* display: none; */
+}
+.prod-btn-hov:hover{
+  border: 1px solid var(--bs-choco);
+  font-weight: 500;
+}
+
+.chef .chef_text {
+    padding: 15px 0; 
+    text-align: center
+}
+
+.chef .chef_text h3 {
+    color: rgb(45, 45, 45);
+    font-size: 15px;
+}
+
+.chef .chef_text p {
+    font-size: 14px;
+}
+
+
+/* Product Section End*/
+
