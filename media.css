@@ -1,23 +1,132 @@
 @media (max-width:1200px) {
-    
+    .slider-item{
+        width: 300px;
+    }
+}
+@media (max-width:1060px) {
+    .footer_content{
+        gap: 5px;
+    }
 }
 @media (max-width:1024px) {
-    
+    .footer_content .pay_cards,
+.footer_content .shopping1,
+.footer_content .shopping2,
+.footer_content .news_letter {
+    width: 35%;
 }
+}
+
 @media (max-width:992px) {
-    
+    .slider-item{
+        width: 230px;
+    }
 }
 @media (max-width:768px) {
-    
+    .car-1{
+        /* height: 70vh; */
+    }
+
+    .slider{
+        padding-block: 20px;
+    }
+    .slider-item {
+        width: 200px;
+        height: 180px;
+    }
+
+    .news_letter input{
+        width: 100%;
+    }
+}
+@media (max-width:660px) {
+      .slider-item {
+        width: 170px;
+        height: 160px;
+    }
+     .slider-item p{
+        font-size: 10px;
+    }
+     .slider-item h6{
+        font-size: 14px;
+    }
+
+   
 }
 @media (max-width:576px) {
-    
+        .footer_content .pay_cards,
+.footer_content .shopping1,
+.footer_content .shopping2,
+.footer_content .news_letter {
+    width: 70%;
+    text-align: center;
+}
+
+   .slider-item {
+        width: 100%;
+    }
+     .slider-item p{
+        font-size: 13px;
+    }
+     .slider-item h6{
+        font-size: 17px;
+    }
+
+    .card p,
+    .card h6 {
+        font-size: 12px;
+    }
+
+    .footer_content{
+        gap: 0px;
+    }
+
+    .prod-btn-hover {
+        padding: 7px 15px;
+        font-size: 12px;
+    }
 }
 @media (max-width:500px) {
     .chef_heading h1 {
         font-size: 20px;
     }
+    .bannerfwc{
+        font-size: 40px;
+    }
 }
-@media (max-width:350px) {
-    
+@media (max-width:380px) {
+    /* .bannersc{
+        margin-top: 25px;
+    } */
+}
+@media (max-width:352px) {
+    .card p,
+    .card h6 {
+        font-size: 10px;
+    }
+
+    .footer_copyright p {
+        font-size: 12px;
+    }
+
+    .prod-btn-hover {
+        padding: 7px 12px;
+        font-size: 9px;
+    }
+    .bannerfwc{
+        font-size: 35px;
+    }
+     
+}
+
+@media (max-width:300px) {
+    .prod-hover,
+    .chef-pic{
+        width: 100%;
+    }
+
+    .card p,
+    .card h6 {
+        font-size: 8px;
+    }
 }

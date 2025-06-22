@@ -2,7 +2,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  /* overflow-x: hidden; */
 }
 
 :root,
@@ -12,18 +11,39 @@ body {
   --bs-brown: brown;
 }
 
+.cross-through {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: white
+}
+
 /* Navigation Start */
 
 nav {
   background-color: transparent;
 }
 
-.navbar-brand {
-  font-size: 30px;
-  font-weight: 900;
-  letter-spacing: 1px;
+.navbar-brand h4 {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-top: 10px;
   color: white;
-  transition: 1s;
+
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 60px;
+  width: 60px;
 }
 
 .nav-link {
@@ -35,11 +55,6 @@ nav {
 
 .nav-link:hover {
   color: var(--bs-choco);
-}
-
-.navbar-brand:hover {
-  color: var(--bs-choco);
-  transform: rotateZ(15deg) scale(1.1);
 }
 
 nav ul li .after::after {
@@ -63,90 +78,276 @@ nav .after:hover::after {
 /* Carousel Start */
 .car-1 {
   background-image: url(Images/cloth2-hero-edit.jpg);
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
 
 /* Carousel End */
 
+/* Hero Text Start */
+
+.bannersc {
+  color: var(--bs-choco);
+  font-size: 15px;
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+
+.bannerfwc {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: white;
+  line-height: 25px;
+}
+
+.bannerp {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.bannerpara {
+  width: 65%;
+}
+
+.bannershopnow {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 150px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  border: none;
+}
+
+.bannershopnow:hover {
+  background-color: rgb(21, 21, 21);
+  transition: 0.1s;
+}
+
+/* Hero Text End */
+
 /* Infinite Carousel Start */
+.infinite-slider {
+  background-color: rgb(250, 249, 249);
+
+}
+
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-block: 80px;
+  gap: 15px;
+}
+
+.slider-item {
+  width: 350px;
+  height: 220px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slider-item:hover{
+  transform: scale(1.07);
+  background-color: rgb(245, 245, 245);
+}
+
+.slider-item img {
+  height: 40px;
+  width: 40px;
+}
+
+.slider-item p {
+  font-size: 14px;
+  color: grey;
+}
+
+.slider-item h6 {
+  font-size: 17px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 /* Infinite Carousel End */
 
 /* Product Section Start*/
 .chef_heading {
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
+  margin-block: 80px;
+  display: flex;
+  justify-content: center;
 }
 
 .chef_heading h1 {
-    color: rgb(41, 41, 41);
-    /* font-weight: 800; */
-    font-size: 40px;
-    /* letter-spacing: 2px; */
+  color: rgb(41, 41, 41);
+  font-weight: 600;
+  font-size: 35px;
+  letter-spacing: 1px;
 }
 
-
-.chef_section {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;   
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.chef{
-    width: 300px;
-    overflow: hidden;
+.card p{
+  font-weight: 700;
+}
+  
+.card:hover .prod-btn-hover {
+  display: block;
 }
 
-.chef .chef_pic img {
-    height: 450px;
-    width: 300px;
-    transition: 0.5s;
-
+.card-body{
+  text-align: left;
+  width: 100%;
 }
 
-.chef_pic{
-    overflow: hidden;
-    position: relative;
+.prod-buy{
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid gray;
 }
 
-.chef .chef_pic:hover .prod-btn-hov {
-    /* display: block; */
-}
-
-.prod-btn-hov{
-  background-color: var(--bs-choco);
+.prod-buy:hover {
+  background-color: rgb(21, 21, 21);
   color: white;
-  border-radius: 0;
-  padding: 12px 30px;
+}
+
+.prod-btn-hover {
+  background-color: rgb(21, 21, 21);
+  color: white;
+  padding: 10px 26px;
   position: absolute;
-  top: -250px;
-  left: 80px;
-  /* display: none; */
-}
-.prod-btn-hov:hover{
-  border: 1px solid var(--bs-choco);
-  font-weight: 500;
+  border-radius: 20px;
+  display: none;
 }
 
-.chef .chef_text {
-    padding: 15px 0; 
-    text-align: center
+.prod-btn-hover:hover {
+  border: 2px solid rgb(21, 21, 21);
 }
-
-.chef .chef_text h3 {
-    color: rgb(45, 45, 45);
-    font-size: 15px;
-}
-
-.chef .chef_text p {
-    font-size: 14px;
-}
-
 
 /* Product Section End*/
 
+/* Footer Start */
+footer {
+  background-color: rgb(21, 21, 21);
+  margin-top: 100px;
+}
+
+footer p {
+  color: rgb(182, 182, 182);
+}
+
+.footer_content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.footer_content .pay_cards {
+  height: 320px;
+  width: 280px;
+}
+
+.footer_content .shopping1 {
+  height: 320px;
+  width: 200px;
+}
+
+.footer_content .shopping2 {
+  height: 320px;
+  width: 200px;
+}
+
+.footer_content .news_letter {
+  height: 320px;
+  width: 320px;
+}
+
+
+.pay_cards p {
+  margin-top: 25px;
+}
+
+.footer_content h4 {
+  margin-bottom: 30px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.news_letter h3 {
+  font-weight: 500;
+  color: white;
+}
+
+.news_letter p {
+  margin-top: 20px;
+
+
+}
+
+.news_letter input::placeholder {
+  color: white;
+}
+
+.news_letter input {
+  margin-top: 20px;
+  height: 40px;
+  width: 300px;
+  padding-inline: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(102, 102, 102);
+  color: white;
+  cursor: pointer;
+}
+
+.news_letter input {
+  font-size: 15px;
+}
+
+.footer_content a p:hover {
+  color: grey;
+}
+
+.footer_copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 10px;
+  border-top: 1px solid gray;
+  text-align: center;
+}
+
+.social-icons i{
+  background-color: rgb(65, 64, 64);
+  padding: 15px;
+  border-radius: 100px;
+}
+
+.social-icons i:hover {
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+
+/* Footer End */

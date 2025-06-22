@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="product.css">
 </head>
 <body>
@@ -13,7 +15,8 @@
   <!-- Main content -->
   <main class="container">
     <!-- Breadcrumb -->
-    <nav class="breadcrumb">
+    <div class="product-nav">
+      <nav class="breadcrumb">
       <a href="/">Home</a>
       <span class="breadcrumb-separator">
         <i class="fas fa-chevron-right"></i>
@@ -28,28 +31,31 @@
       </span>
     </nav>
 
+    </div>
+
+
     <!-- Product layout -->
     <div class="product-layout">
       <!-- Product images -->
       <div class="product-images">
         <div class="main-image">
-          <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=600&auto=format&fit=crop&q=60" alt="Classic Comfort Sweatshirt - main image" id="main-product-image">
+          <img src="https://plus.unsplash.com/premium_photo-1675186049409-f9f8f60ebb5e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Classic Comfort Sweatshirt - main image" id="main-product-image">
         </div>
         <div class="image-thumbnails">
-          <button class="thumbnail-btn active" data-image="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=600&auto=format&fit=crop&q=60">
-            <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=600&auto=format&fit=crop&q=60" alt="Classic Comfort Sweatshirt - view 1">
+          <button class="thumbnail-btn active" data-image="https://plus.unsplash.com/premium_photo-1675186049409-f9f8f60ebb5e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D">
+            <img src="https://plus.unsplash.com/premium_photo-1675186049409-f9f8f60ebb5e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Classic Comfort Sweatshirt - view 1">
           </button>
-          <button class="thumbnail-btn" data-image="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?w=600&auto=format&fit=crop&q=60">
-            <img src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?w=600&auto=format&fit=crop&q=60" alt="Classic Comfort Sweatshirt - view 2">
+          <button class="thumbnail-btn" data-image="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D">
+            <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Classic Comfort Sweatshirt - view 2">
           </button>
-          <button class="thumbnail-btn" data-image="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?w=600&auto=format&fit=crop&q=60">
-            <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?w=600&auto=format&fit=crop&q=60" alt="Classic Comfort Sweatshirt - view 3">
+          <button class="thumbnail-btn" data-image="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fGNsb3RoaW5nfGVufDB8fDB8fHww">
+            <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fGNsb3RoaW5nfGVufDB8fDB8fHww" alt="Classic Comfort Sweatshirt - view 3">
           </button>
-          <button class="thumbnail-btn" data-image="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&auto=format&fit=crop&q=60">
-            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&auto=format&fit=crop&q=60" alt="Classic Comfort Sweatshirt - view 4">
+          <button class="thumbnail-btn" data-image="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGNsb3RoaW5nfGVufDB8fDB8fHww">
+            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGNsb3RoaW5nfGVufDB8fDB8fHww" alt="Classic Comfort Sweatshirt - view 4">
           </button>
-          <button class="thumbnail-btn" data-image="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&auto=format&fit=crop&q=60">
-            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&auto=format&fit=crop&q=60" alt="Classic Comfort Sweatshirt - view 5">
+          <button class="thumbnail-btn" data-image="https://images.unsplash.com/photo-1614676471928-2ed0ad1061a4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODl8fGNsb3RoaW5nfGVufDB8fDB8fHww">
+            <img src="https://images.unsplash.com/photo-1614676471928-2ed0ad1061a4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODl8fGNsb3RoaW5nfGVufDB8fDB8fHww" alt="Classic Comfort Sweatshirt - view 5">
           </button>
         </div>
       </div>
@@ -71,24 +77,8 @@
         <p class="product-description">A comfy collection, perfect for casual everyday wear.</p>
         
         <div class="product-price">
-          <span class="current-price">$79.99</span>
+          <span class="current-price">$70.99</span>
           <span class="original-price">$95.00</span>
-        </div>
-        
-        <!-- Color selector -->
-        <div class="color-selector">
-          <div class="option-label">Color: <span id="selected-color">Sage Green</span></div>
-          <div class="color-options">
-            <button class="color-option selected" data-color-name="Sage Green">
-              <span class="color-swatch" style="background-color: #97a98f;"></span>
-            </button>
-            <button class="color-option" data-color-name="Soft Beige">
-              <span class="color-swatch" style="background-color: #f1deca;"></span>
-            </button>
-            <button class="color-option" data-color-name="Light Blue">
-              <span class="color-swatch" style="background-color: #b7c4cf;"></span>
-            </button>
-          </div>
         </div>
         
         <!-- Size selector -->
@@ -378,7 +368,7 @@
         <!-- Product 2 -->
         <div class="product-card">
           <div class="product-card-image">
-            <img src="https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?w=400&auto=format&fit=crop&q=60" alt="Dolman T-Shirt">
+            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTB8fGNsb3RoaW5nfGVufDB8fDB8fHww" alt="Dolman T-Shirt">
             <button class="product-card-wishlist">
               <i class="fas fa-heart"></i>
             </button>
