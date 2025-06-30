@@ -1,75 +1,119 @@
 @media (max-width:1200px) {
-    .slider-item{
+    .slider-item {
         width: 300px;
     }
 }
+
 @media (max-width:1060px) {
-    .footer_content{
+    .footer_content {
         gap: 5px;
     }
 }
+
 @media (max-width:1024px) {
+
     .footer_content .pay_cards,
-.footer_content .shopping1,
-.footer_content .shopping2,
-.footer_content .news_letter {
-    width: 35%;
-}
+    .footer_content .shopping1,
+    .footer_content .shopping2,
+    .footer_content .news_letter {
+        width: 35%;
+    }
 }
 
 @media (max-width:992px) {
-    .slider-item{
+    .slider-item {
         width: 230px;
     }
+
+    .about .text {
+        width: 60%;
+    }
 }
+
 @media (max-width:768px) {
-    .car-1{
-        /* height: 70vh; */
+    .d-non{
+        /* display: block; */
     }
 
-    .slider{
+    /* #sidebar-btn{
+        display: block;
+    } */
+
+    .slider {
         padding-block: 20px;
     }
+
     .slider-item {
-        width: 200px;
-        height: 180px;
+        width: 100%;
+        height: 200px;
     }
 
-    .news_letter input{
+    .news_letter input {
         width: 100%;
     }
+
+    .carousel {
+        gap: 10px;
+    }
+
+    .wrapper .carousel .card {
+        width: 235px;
+        height: 235px;
+    }
+
+    .carousel .card .img {
+        height: 118px;
+        width: 118px;
+    }
+
+    .carousel .card .img img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .carousel .card h2 {
+        font-weight: 500;
+        font-size: 1.26rem;
+        margin: 30px 0 5px;
+    }
+
+    .carousel .card span {
+        color: #6a6d78;
+        font-size: 1rem;
+    }
 }
+
 @media (max-width:660px) {
-      .slider-item {
-        width: 170px;
+
+    .about .pic1 {
+        height: 430px;
+        width: 240px;
+
+    }
+
+    .about .pic2 {
+        height: 430px;
+        width: 240px;
+    }
+}
+
+@media (max-width:577px) {
+
+    .footer_content .pay_cards,
+    .footer_content .shopping1,
+    .footer_content .shopping2,
+    .footer_content .news_letter {
+        width: 70%;
+        text-align: center;
+    }
+
+    .slider-item {
         height: 160px;
     }
-     .slider-item p{
-        font-size: 10px;
-    }
-     .slider-item h6{
-        font-size: 14px;
-    }
 
-   
-}
-@media (max-width:576px) {
-        .footer_content .pay_cards,
-.footer_content .shopping1,
-.footer_content .shopping2,
-.footer_content .news_letter {
-    width: 70%;
-    text-align: center;
-}
-
-   .slider-item {
-        width: 100%;
-    }
-     .slider-item p{
-        font-size: 13px;
-    }
-     .slider-item h6{
-        font-size: 17px;
+    .slider-item img {
+        height: 40px;
+        width: 40px;
     }
 
     .card p,
@@ -77,7 +121,7 @@
         font-size: 12px;
     }
 
-    .footer_content{
+    .footer_content {
         gap: 0px;
     }
 
@@ -85,21 +129,141 @@
         padding: 7px 15px;
         font-size: 12px;
     }
+
+
 }
-@media (max-width:500px) {
+
+@media (max-width:505px) {
     .chef_heading h1 {
         font-size: 20px;
     }
-    .bannerfwc{
+
+    .bannerfwc {
         font-size: 40px;
     }
+
+    .slider {
+        gap: 5px;
+    }
+
+    .about {
+        gap: 10px;
+    }
+
+    .about .text {
+        width: 95%;
+    }
+
+    .about .pic1 {
+        height: 400px;
+        width: 205px;
+
+    }
+
+    .about .pic2 {
+        height: 400px;
+        width: 205px;
+    }
+
+    .carousel {
+        gap: 10px;
+    }
+
+    .wrapper .carousel .card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .carousel .card .img {
+        height: 98px;
+        width: 98px;
+    }
+
+    .carousel .card .img img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .carousel .card h2 {
+        font-weight: 500;
+        font-size: 1.06rem;
+        margin: 20px 0 5px;
+    }
+
+    .carousel .card span {
+        color: #6a6d78;
+        font-size: 0.85rem;
+    }
 }
+
+@media (max-width:425px) {
+
+    .about .pic1 {
+        height: 300px;
+        width: 180px;
+
+    }
+
+    .about .pic2 {
+        height: 300px;
+        width: 180px;
+    }
+
+    .carousel {
+        gap: 5px;
+    }
+
+    .wrapper .carousel .card {
+        width: 160px;
+        height: 160px;
+    }
+
+    .carousel .card .img {
+        height: 76px;
+        width: 76px;
+    }
+
+    .carousel .card .img img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .carousel .card h2 {
+        font-weight: 500;
+        font-size: 0.90rem;
+        margin: 15px 0 0px;
+    }
+
+    .carousel .card span {
+        color: #6a6d78;
+        font-size: 0.85rem;
+    }
+
+
+    .testimonial4_slide p{
+        font-size: 15px;
+    }
+}
+
 @media (max-width:380px) {
-    /* .bannersc{
-        margin-top: 25px;
-    } */
+    .bannersc {
+        margin-top: 50px;
+    }
+
+    .about .pic1 {
+        height: 260px;
+        width: 145px;
+
+    }
+
+    .about .pic2 {
+        height: 260px;
+        width: 145px;
+    }
 }
+
 @media (max-width:352px) {
+
     .card p,
     .card h6 {
         font-size: 10px;
@@ -113,15 +277,60 @@
         padding: 7px 12px;
         font-size: 9px;
     }
-    .bannerfwc{
-        font-size: 35px;
+
+    .bannerfwc {
+        font-size: 32px;
     }
-     
+
+    .slider-item {
+        height: 110px;
+    }
+
+    .about .text h3 {
+        font-size: 60px;
+    }
+
+    .about .text h1 {
+        font-size: 45px;
+    }
+
+    .testimonial4_slide p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:325px) {
+    .wrapper .carousel .card {
+        width: 130px;
+        height: 130px;
+    }
+
+    .carousel .card .img {
+        height: 49px;
+        width: 49px;
+    }
+
+    .carousel .card .img img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .carousel .card h2 {
+        font-weight: 500;
+        font-size: 0.70rem;
+        margin: 15px 0 0px;
+    }
+
+    .carousel .card span {
+        color: #6a6d78;
+        font-size: 0.65rem;
+    }
 }
 
 @media (max-width:300px) {
+
     .prod-hover,
-    .chef-pic{
+    .chef-pic {
         width: 100%;
     }
 
@@ -129,4 +338,16 @@
     .card h6 {
         font-size: 8px;
     }
+
+    .about .pic1 {
+        height: 260px;
+        width: 130px;
+
+    }
+
+    .about .pic2 {
+        height: 260px;
+        width: 130px;
+    }
+
 }

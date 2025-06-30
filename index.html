@@ -7,180 +7,513 @@
     <title>Ta Labels</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+        rel="stylesheet">
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
 
-    <div class="car-1">
-        <nav class="navbar navbar-expand-md  ">
-            <div class="container-fluid container">
-                <div class="">
-                    <a class="navbar-brand" href="index.html"><img src="Logo/ta-logo-transparent.png" alt="TA">
-                        <h4>LABELS</h4>
-                    </a>
-                </div>
-                <button class="navbar-toggler bg-light" type="button">
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end py-2" id="navbarNav">
-                    <ul class="navbar-nav navfont">
-                        <li class="nav-item"><a class="nav-link after" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link after" href="about.html">Shop</a></li>
-                        <li class="nav-item"><a class="nav-link after" href="product.html">Products</a></li>
-                        <li class="nav-item"><a class="nav-link after" href="stories.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link after" href="stories.html">Contact</a></li>
-                    </ul>
-                </div>
+    <div class="car-home">
+        <header class="navbar-shop sticky">
+            <a href="#" class="logo"><img src="Logo/ta-logo-transparent.png" alt="TA">Labels</a>
+            <div class="menu-btn">
+                <div class="menu-btn__lines"></div>
             </div>
-        </nav>
+            <ul class="menu-items">
+                <li><a href="index.html" class="menu-item fs-5 after">Home</a></li>
+                <li><a href="shop.html" class="menu-item fs-5 after">Shop</a></li>
+                <li><a href="product.html" class="menu-item fs-5 after">Products</a></li>
+                <li><a href="about.html" class="menu-item fs-5 after">About</a></li>
+                <li><a href="contact.html" class="menu-item fs-5 after">Contact</a></li>
+            </ul>
+        </header>
 
-        
-            <h5 class="bannersc">SUMMER COLLECTION</h5>
-            <h1 class="bannerfwc">Fall-Winter </h1>
-            <h1 class="bannerfwc">Collections 2030 </h1>
-            <div class="bannerp">
-                <p class="bannerpara">A specialist label creating a luxury essentials.Ethically crafted with an unwavering
+        <div class="overlay"></div>
+
+        <h5 class="bannersc">SUMMER COLLECTION</h5>
+        <h1 class="bannerfwc">Fall-Winter </h1>
+        <h1 class="bannerfwc">Collections 2025</h1>
+        <div class="bannerp">
+            <p class="bannerpara">A specialist label creating a luxury essentials.Ethically crafted with an unwavering
                 commitment to exceptional quality.</p>
-            </div>
-            <button class="bannershopnow">SHOP NOW</button>
-        
+        </div>
+        <button class="bannershopnow">SHOP NOW</button>
+
     </div>
 
-    <!-- Infinite Slider Start -->
-    <div class="infinite-slider">
-        <div class="slider container-fluid">
-            <div class="slider-item">
-                <img src="Images/truck.png" alt="Slider Image 1">
-                <h6 class="my-2">
-                    Worldwide Delivery</h6>
-                <p>Far far away, behind the word mountains, far from the countries.</p>
-            </div>
-            <div class="slider-item">
-                <img src="Images/protection.png" alt="Slider Image 2">
-                <h6 class="my-2">Secure
-                    Payments</h6>
-                <p>Far far away, behind the word mountains, far from the countries.</p>
-            </div>
-            <div class="slider-item">
-                <img src="Images/back.png" alt="Slider Image 3">
-                <h6 class="my-2">Simple
-                    Returns</h6>
-                <p>Far far away, behind the word mountains, far from the countries.</p>
+    <div class="owl-carousel owl-theme owl-loaded owl-drag">
+
+        <div class="owl-stage-outer">
+
+            <div class="owl-stage"
+                style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
+
+                <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;">
+                    <div class="item">
+                        <h4>1</h4>
+                    </div>
+                </div>
+
+                <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;">
+                    <div class="item">
+                        <h4>2</h4>
+                    </div>
+                </div>
+
+                <div class="owl-item cloned" style="width: 128.906px; margin-right: 10px;">
+                    <div class="item">
+                        <h4>3</h4>
+                    </div>
+                </div>
+
             </div>
         </div>
+        <div class="owl-nav disabled">
+
+        </div>
+
     </div>
-    <!-- Infinite Slider End -->
 
     <!-- Product Section Start -->
     <div class="chef_heading" id="courses">
         <h1>FEATURED PRODUCTS</h1>
     </div>
 
+    <!-- Product Section Ends -->
 
-    <div class="container-xxl">
-        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 row-cols-xl-4">
-            <div class="col mb-4">
-                <div class="card" style="border: none;">
-                    <a href=""><img src="Images/cloth_2.jpg.webp" class="card-img-top" alt="..."></a>
-                    <button class="btn prod-btn-hover"><a href="product.html">View Details</a></button>
-                    <div class="card-body">
-                        <h6 class="card-title">Sleeves Dress White</h6>
-                        <p class="card-text">Rs. 2000</p>
-                        <button class="btn prod-buy">Buy Now</button>
+    <section class="related-products container">
+        <!-- <h2 class="section-title">You May Also Like</h2> -->
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="new-tag">New Arrivals</div>
+                <div class="product-card-image">
+                    <img src="Images/AVIF/pr-1.webp" alt="V-Neck Soft Knit Sweater">
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="product-card-name">V-Neck Soft Knit Sweater</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     </div>
+                    <span class="product-card-review-count">(170)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$69.99</span>
                 </div>
             </div>
-            <div class="col mb-4">
-                <div class="card" style="border: none;">
-                    <img src="Images/cloth_2.jpg.webp" class="card-img-top" alt="...">
-                    <button class="btn prod-btn-hover"><a href="product.html">View Details</a></button>
-                    <div class="card-body">
-                        <h6 class="card-title">Sleeves Dress White</h6>
-                        <p class="card-text">Rs. 2000 &nbsp;<s>Rs. 3500</s></p>
-                        <button class="btn prod-buy">Buy Now</button>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="Images/AVIF/pr-2.webp" alt="Dolman T-Shirt">
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="product-card-name">Dolman T-Shirt</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     </div>
+                    <span class="product-card-review-count">(220)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$79.99</span>
+                    <span class="product-card-original-price">$99.99</span>
                 </div>
             </div>
-            <div class="col mb-4">
-                <div class="card" style="border: none;">
-                    <img src="Images/cloth_2.jpg.webp" class="card-img-top" alt="...">
-                    <button class="btn prod-btn-hover"><a href="product.html">View Details</a></button>
-                    <div class="card-body">
-                        <h6 class="card-title">Sleeves Dress White</h6>
-                        <p class="card-text">Rs. 2000 &nbsp;<s>Rs. 3500</s></p>
-                        <button class="btn prod-buy">Buy Now</button>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="Images/AVIF/pr-3.webp" alt="Long Sleeve Sweater">
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="product-card-name">Long Sleeve Sweater</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     </div>
+                    <span class="product-card-review-count">(270)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$89.99</span>
                 </div>
             </div>
-            <div class="col mb-4">
-                <div class="card" style="border: none;">
-                    <img src="Images/cloth_2.jpg.webp" class="card-img-top" alt="...">
-                    <button class="btn prod-btn-hover"><a href="product.html">View Details</a></button>
-                    <div class="card-body">
-                        <h6 class="card-title">Sleeves Dress White</h6>
-                        <p class="card-text">Rs. 2000 &nbsp;<s>Rs. 3500</s></p>
-                        <button class="btn prod-buy">Buy Now</button>
-                    </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="Images/AVIF/pr-4.webp" alt="Vintage Sweatshirt">
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
                 </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card" style="border: none;">
-                    <img src="Images/cloth_2.jpg.webp" class="card-img-top" alt="...">
-                    <button class="btn prod-btn-hover"><a href="product.html">View Details</a></button>
-                    <div class="card-body">
-                        <h6 class="card-title">Sleeves Dress White</h6>
-                        <p class="card-text">Rs. 2000 &nbsp;<s>Rs. 3500</s></p>
-                        <button class="btn prod-buy">Buy Now</button>
+                <h3 class="product-card-name">Vintage Sweatshirt</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
+                    <span class="product-card-review-count">(320)</span>
                 </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card" style="border: none;">
-                    <img src="Images/cloth_2.jpg.webp" class="card-img-top" alt="...">
-                    <button class="btn prod-btn-hover"><a href="product.html">View Details</a></button>
-                    <div class="card-body">
-                        <h6 class="card-title">Sleeves Dress White</h6>
-                        <p class="card-text">Rs. 2000 &nbsp;<s>Rs. 3500</s></p>
-                        <button class="btn prod-buy">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card" style="border: none;">
-                    <img src="Images/cloth_2.jpg.webp" class="card-img-top" alt="...">
-                    <button class="btn prod-btn-hover"><a href="product.html">View Details</a></button>
-                    <div class="card-body">
-                        <h6 class="card-title">Sleeves Dress White</h6>
-                        <p class="card-text">Rs. 2000 &nbsp;<s>Rs. 3500</s></p>
-                        <button class="btn prod-buy">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card" style="border: none;">
-                    <img src="Images/cloth_2.jpg.webp" class="card-img-top" alt="...">
-                    <button class="btn prod-btn-hover"><a href="product.html">View Details</a></button>
-                    <div class="card-body">
-                        <h6 class="card-title">Sleeves Dress White</h6>
-                        <p class="card-text">Rs. 2000 &nbsp;<s>Rs. 3500</s></p>
-                        <button class="btn prod-buy">Buy Now</button>
-                    </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$99.99</span>
+                    <span class="product-card-original-price">$119.99</span>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="related-products container">
+        <!-- <h2 class="section-title">You May Also Like</h2>+ -->
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="new-tag">New Arrivals</div>
+                <div class="product-card-image">
+                    <img src="Images/AVIF/pr-5.webp" alt="V-Neck Soft Knit Sweater">
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="product-card-name">V-Neck Soft Knit Sweater</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="product-card-review-count">(170)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$69.99</span>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="Images/AVIF/pr-6.webp" alt="Dolman T-Shirt">
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="product-card-name">Dolman T-Shirt</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="product-card-review-count">(220)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$79.99</span>
+                    <span class="product-card-original-price">$99.99</span>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="Images/AVIF/pr-7.webp" alt="Long Sleeve Sweater">
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="product-card-name">Long Sleeve Sweater</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="product-card-review-count">(270)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$89.99</span>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="Images/AVIF/pr-8.webp" alt="Vintage Sweatshirt">
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="product-card-name">Vintage Sweatshirt</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="product-card-review-count">(320)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$99.99</span>
+                    <span class="product-card-original-price">$119.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="related-products container">
+        <!-- <h2 class="section-title">You May Also Like</h2> -->
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="new-tag">New Arrivals</div>
+                <div class="product-card-image">
+                    <img src="Images/AVIF/pr-9.webp" alt="V-Neck Soft Knit Sweater">
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="product-card-name">V-Neck Soft Knit Sweater</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="product-card-review-count">(170)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$69.99</span>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="Images/AVIF/pr-10.webp" alt="Dolman T-Shirt">
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="product-card-name">Dolman T-Shirt</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="product-card-review-count">(220)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$79.99</span>
+                    <span class="product-card-original-price">$99.99</span>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="Images/AVIF/pr-11.webp" alt="Long Sleeve Sweater">
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="product-card-name">Long Sleeve Sweater</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="product-card-review-count">(270)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$89.99</span>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="Images/AVIF/pr-12.webp" alt="Vintage Sweatshirt">
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3 class="product-card-name">Vintage Sweatshirt</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="product-card-review-count">(320)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$99.99</span>
+                    <span class="product-card-original-price">$119.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section Start -->
+    <section class="testimonial text-center" style="margin-block: 100px;">
+        <div class="container">
+
+            <div class="heading white-heading">
+                Testimonial
+            </div>
+            <div id="testimonial4"
+                class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
+                data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <img src="Images/customer1.webp" class="img-circle img-responsive" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 1</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="Images/customer1.webp" class="img-circle img-responsive" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 2</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="Images/customer1.webp" class="img-circle img-responsive" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 3</h4>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- Contact Section Start -->
+
+    <div class="container-xl">
+        <div class="contact_us">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.6490678471764!2d67.1573786751994!3d24.84167207794153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33b00609814f1%3A0xbd6daf57433c1d47!2sTa-Labels!5e0!3m2!1sen!2s!4v1750674371986!5m2!1sen!2s"
+                width="552" height="520" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Contact us</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="con-name" placeholder="Your Name"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" id="con-email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="con-sub" placeholder="Subject"></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="con-textarea" placeholder="Message"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><button class="contact-sm" id="send">Send Message</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </div>
 
-    <!-- Product Section Ends -->
+    <!-- Contact Section End -->
+
+    <!-- Infinite Slider Start -->
+    <div class="infinite-slider">
+        <div class="slider container-fluid">
+            <div class="slider-item">
+                <img src="Images/truck.png" alt="Slider Image 1">
+                <h6 class="">Free Delivery</h6>
+                <p>Far far away, behind the word mountains, far from the countries.</p>
+            </div>
+            <div class="slider-item">
+                <img src="Images/protection.png" alt="Slider Image 2">
+                <h6 class="">Secure Payments</h6>
+                <p>Far far away, behind the word mountains, far from the countries.</p>
+            </div>
+            <div class="slider-item">
+                <img src="Images/back.png" alt="Slider Image 3">
+                <h6 class="">Simple Returns</h6>
+                <p>Far far away, behind the word mountains, far from the countries.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Infinite Slider End -->
 
     <!-- Footer Start -->
     <footer>
         <div class="container-xxl">
             <div class="footer_content row">
                 <div class="pay_cards col-3-md-3 col-sm-12">
-                    <!-- <img src="Img/footer-logo.png" alt=""> -->
-                    <h1 class="text-white">Ta Labels</h1>
+
+                    <h1 class="text-white"><img src="Logo/ta-logo-transparent.png" style="height: 80px; width: 80px;"
+                            alt="TA">Labels</h1>
                     <p>The customer is at the heart of our unique business model, which includes design</p>
                     <div class="footer_main_social">
                         <div class="social-icons mt-5">
@@ -230,16 +563,21 @@
             </div>
 
             <div class="footer_copyright">
-                <p>Copyright © 2024&nbsp;2020 All rights reserved | This template is made with by Colorlib</p>
+                <p>Copyright © 2024&nbsp;2020 All rights reserved |</p>
             </div>
         </div>
 
     </footer>
     <!-- Footer End -->
 
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+    </script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
 
