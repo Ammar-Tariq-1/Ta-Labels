@@ -2096,118 +2096,6 @@ button {
 
 /* Sticky Cart */
 
-
-/* Footer Start */
-footer {
-  background-color: rgb(21, 21, 21);
-}
-
-footer p {
-  color: rgb(182, 182, 182);
-}
-
-.footer_content {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding-top: 70px;
-}
-
-.footer_content .pay_cards {
-  height: 320px;
-  width: 280px;
-  margin-bottom: 10px;
-}
-
-.footer_content .shopping1 {
-  height: 230px;
-  width: 200px;
-  margin-bottom: 20px;
-}
-
-.footer_content .shopping2 {
-  height: 230px;
-  width: 200px;
-  margin-bottom: 30px;
-}
-
-.footer_content .news_letter {
-  height: 320px;
-  width: 320px;
-}
-
-
-.pay_cards p {
-  margin-top: 25px;
-}
-
-.footer_content h4 {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  color: white;
-  letter-spacing: 2px;
-  font-weight: 600;
-}
-
-.news_letter h3 {
-  margin-top: 20px;
-  font-weight: 500;
-  color: white;
-}
-
-.news_letter p {
-  margin-top: 20px;
-
-
-}
-
-.news_letter input::placeholder {
-  color: white;
-}
-
-.news_letter input {
-  margin-top: 20px;
-  height: 40px;
-  width: 300px;
-  padding-inline: 10px;
-  border: none;
-  outline: none;
-  background-color: rgb(102, 102, 102);
-  color: white;
-  cursor: pointer;
-}
-
-.news_letter input {
-  font-size: 15px;
-}
-
-.footer_content a p:hover {
-  color: grey;
-}
-
-.footer_copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-block: 10px;
-  border-top: 1px solid gray;
-  text-align: center;
-}
-
-.social-icons i {
-  background-color: rgb(65, 64, 64);
-  padding: 15px;
-  border-radius: 100px;
-}
-
-.social-icons i:hover {
-  transform: rotateY(360deg);
-  transition: 2s;
-}
-
-/* Footer End*/
-
-
 /* Checkout Section */
 
 .checkout-box {
@@ -2353,18 +2241,21 @@ i {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  width: 100%;
 }
 
 .pg-cart {
   width: 670px !important;
+  height: 100%;
+  overflow-x: scroll;
 }
 
 .pg-cart .pg-head {
+  width: 670px;
   border: 1px solid lightgray;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
+  white-space: nowrap;
 }
 
 .pg-cart .pg-head span {
@@ -2374,11 +2265,13 @@ i {
 }
 
 .pg-cart .pg-main {
+  width: 670px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px;
   border: 1px solid lightgray;
+  white-space: nowrap;
 }
 
 .pg-cart .pg-main img {
@@ -2405,6 +2298,10 @@ i {
 
 .pg-cart .pg-main .pg-add-minus .add-minus-hover:hover {
   background-color: lightgray;
+}
+
+.pg-continue{
+  width: 670px;
 }
 
 .pg-continue button {
@@ -2478,3 +2375,113 @@ i {
 }
 
 /* Shopping Cart Page */
+
+/* Footer Start */
+footer {
+  background-color: rgb(21, 21, 21);
+}
+
+footer p {
+  color: rgb(182, 182, 182);
+}
+
+.footer_content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 70px;
+}
+
+.footer_content .pay_cards {
+  height: 320px;
+  width: 280px;
+  margin-bottom: 10px;
+}
+
+.footer_content .shopping1 {
+  height: 230px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer_content .shopping2 {
+  height: 230px;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.footer_content .news_letter {
+  height: 320px;
+  width: 320px;
+}
+
+
+.pay_cards p {
+  margin-top: 25px;
+}
+
+.footer_content h4 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.news_letter h3 {
+  margin-top: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.news_letter p {
+  margin-top: 20px;
+
+
+}
+
+.news_letter input::placeholder {
+  color: white;
+}
+
+.news_letter input {
+  margin-top: 20px;
+  height: 40px;
+  width: 300px;
+  padding-inline: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(102, 102, 102);
+  color: white;
+  cursor: pointer;
+}
+
+.news_letter input {
+  font-size: 15px;
+}
+
+.footer_content a p:hover {
+  color: grey;
+}
+
+.footer_copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 10px;
+  border-top: 1px solid gray;
+  text-align: center;
+}
+
+.social-icons i {
+  background-color: rgb(65, 64, 64);
+  padding: 15px;
+  border-radius: 100px;
+}
+
+.social-icons i:hover {
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+
+/* Footer End*/

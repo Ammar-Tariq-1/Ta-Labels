@@ -158,7 +158,6 @@
 
     .slider{
         flex-wrap: wrap;
-        
     }
 
     .slider-item {
@@ -217,8 +216,6 @@
         width: 240px;
     }
 
-    .pg-cart{
-    }
 }
 
 @media (max-width:577px) {
