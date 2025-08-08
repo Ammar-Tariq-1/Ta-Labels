@@ -11,6 +11,8 @@
         rel="stylesheet">
     <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
         rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
@@ -19,31 +21,52 @@
 <body>
 
     <div class="car-home">
-        <header class="navbar-shop sticky">
-            <a href="#" class="logo"><img src="Logo/ta-logo-transparent.png" alt="TA">Labels</a>
+        <header class="navbar-shop sticky ">
             <div class="menu-btn">
                 <div class="menu-btn__lines"></div>
             </div>
+            <a href="#" class="logo"><img src="Logo/ta-logo-transparent.png" alt="TA">Labels</a>
             <ul class="menu-items">
-                <li><a href="index.html" class="menu-item fs-5 after">Home</a></li>
+                <li><a href="index.html" class="menu-item fs-5 after active">Home</a></li>
                 <li><a href="shop.html" class="menu-item fs-5 after">Shop</a></li>
-                <li><a href="product.html" class="menu-item fs-5 after">Products</a></li>
+                <li class="dp-menu" onclick="sidebardrop()">
+                    <span class="menu-item fs-5 after">Pages <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                    <ul class="sidebar-dropdown">
+                        <li><a href="signup.html" class="">Login/SignUp</a></li>
+                        <li><a href="product.html" class="">Product Details</a></li>
+                        <li><a href="shopcart.html" class="">Shopping Cart</a></li>
+                        <li><a href="checkout.html" class="">Checkout</a></li>
+                    </ul>
+                    <ul class="dropdown">
+                        <li><a href="signup.html" class="">Login/SignUp</a></li>
+                        <li><a href="product.html" class="">Product Details</a></li>
+                        <li><a href="shopcart.html" class="">Shopping Cart</a></li>
+                        <li><a href="checkout.html" class="">Checkout</a></li>
+                    </ul>
+                </li>
                 <li><a href="about.html" class="menu-item fs-5 after">About</a></li>
                 <li><a href="contact.html" class="menu-item fs-5 after">Contact</a></li>
             </ul>
+            <div class="nav-user d-flex">
+                <div class="cart-drawer-btn me-2">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <a href="signup.html"><i class="fa-regular fa-circle-user"></i></a>
+            </div>
         </header>
 
-        <div class="overlay"></div>
 
         <h5 class="bannersc">SUMMER COLLECTION</h5>
         <h1 class="bannerfwc">Fall-Winter </h1>
         <h1 class="bannerfwc">Collections 2025</h1>
         <div class="bannerp">
-            <p class="bannerpara">A specialist label creating a luxury essentials.Ethically crafted with an unwavering
+            <p class="bannerpara">A specialist label creating a luxury essentials. Ethically crafted with an unwavering
                 commitment to exceptional quality.</p>
         </div>
-        <button class="bannershopnow">SHOP NOW</button>
+        <button class="bannershopnow"><a href="shop.html">SHOP NOW</a></button>
 
+        <div class="overlay"></div>
     </div>
 
     <div class="owl-carousel owl-theme owl-loaded owl-drag">
@@ -93,12 +116,17 @@
             <div class="product-card">
                 <div class="new-tag">New Arrivals</div>
                 <div class="product-card-image">
-                    <img src="Images/AVIF/pr-1.webp" alt="V-Neck Soft Knit Sweater">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-1.webp" alt="V-Neck Soft Knit Sweater">
+                    </a>
                     <button class="product-card-wishlist">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
-                <h3 class="product-card-name">V-Neck Soft Knit Sweater</h3>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Faded Horizon Denim</h3>
                 <div class="product-card-rating">
                     <div class="product-card-stars">
                         <i class="fas fa-star"></i>
@@ -117,12 +145,17 @@
             <!-- Product 2 -->
             <div class="product-card">
                 <div class="product-card-image">
-                    <img src="Images/AVIF/pr-2.webp" alt="Dolman T-Shirt">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-2.webp" alt="Dolman T-Shirt">
+                    </a>
                     <button class="product-card-wishlist">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
-                <h3 class="product-card-name">Dolman T-Shirt</h3>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Coastal Chill Sweatshirt</h3>
                 <div class="product-card-rating">
                     <div class="product-card-stars">
                         <i class="fas fa-star"></i>
@@ -142,12 +175,17 @@
             <!-- Product 3 -->
             <div class="product-card">
                 <div class="product-card-image">
-                    <img src="Images/AVIF/pr-3.webp" alt="Long Sleeve Sweater">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-3.webp" alt="Long Sleeve Sweater">
+                    </a>
                     <button class="product-card-wishlist">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
-                <h3 class="product-card-name">Long Sleeve Sweater</h3>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Classic Fade Tee</h3>
                 <div class="product-card-rating">
                     <div class="product-card-stars">
                         <i class="fas fa-star"></i>
@@ -166,12 +204,17 @@
             <!-- Product 4 -->
             <div class="product-card">
                 <div class="product-card-image">
-                    <img src="Images/AVIF/pr-4.webp" alt="Vintage Sweatshirt">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-4.webp" alt="Vintage Sweatshirt">
+                    </a>
                     <button class="product-card-wishlist">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
-                <h3 class="product-card-name">Vintage Sweatshirt</h3>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">ModEra Twinwear</h3>
                 <div class="product-card-rating">
                     <div class="product-card-stars">
                         <i class="fas fa-star"></i>
@@ -189,6 +232,7 @@
             </div>
         </div>
     </section>
+
     <section class="related-products container">
         <!-- <h2 class="section-title">You May Also Like</h2>+ -->
         <div class="products-grid">
@@ -196,12 +240,17 @@
             <div class="product-card">
                 <div class="new-tag">New Arrivals</div>
                 <div class="product-card-image">
-                    <img src="Images/AVIF/pr-5.webp" alt="V-Neck Soft Knit Sweater">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-5.webp" alt="V-Neck Soft Knit Sweater">
+                    </a>
                     <button class="product-card-wishlist">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
-                <h3 class="product-card-name">V-Neck Soft Knit Sweater</h3>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Skyline Soft Knit</h3>
                 <div class="product-card-rating">
                     <div class="product-card-stars">
                         <i class="fas fa-star"></i>
@@ -220,12 +269,17 @@
             <!-- Product 2 -->
             <div class="product-card">
                 <div class="product-card-image">
-                    <img src="Images/AVIF/pr-6.webp" alt="Dolman T-Shirt">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-6.webp" alt="Dolman T-Shirt">
+                    </a>
                     <button class="product-card-wishlist">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
-                <h3 class="product-card-name">Dolman T-Shirt</h3>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Nightfall Puffer</h3>
                 <div class="product-card-rating">
                     <div class="product-card-stars">
                         <i class="fas fa-star"></i>
@@ -245,12 +299,17 @@
             <!-- Product 3 -->
             <div class="product-card">
                 <div class="product-card-image">
-                    <img src="Images/AVIF/pr-7.webp" alt="Long Sleeve Sweater">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-7.webp" alt="Long Sleeve Sweater">
+                    </a>
                     <button class="product-card-wishlist">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
-                <h3 class="product-card-name">Long Sleeve Sweater</h3>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Graphite Vibe Tee</h3>
                 <div class="product-card-rating">
                     <div class="product-card-stars">
                         <i class="fas fa-star"></i>
@@ -269,12 +328,17 @@
             <!-- Product 4 -->
             <div class="product-card">
                 <div class="product-card-image">
-                    <img src="Images/AVIF/pr-8.webp" alt="Vintage Sweatshirt">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-8.webp" alt="Vintage Sweatshirt">
+                    </a>
                     <button class="product-card-wishlist">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
-                <h3 class="product-card-name">Vintage Sweatshirt</h3>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Steel Pulse Moto Jacket</h3>
                 <div class="product-card-rating">
                     <div class="product-card-stars">
                         <i class="fas fa-star"></i>
@@ -292,6 +356,7 @@
             </div>
         </div>
     </section>
+
     <section class="related-products container">
         <!-- <h2 class="section-title">You May Also Like</h2> -->
         <div class="products-grid">
@@ -299,12 +364,17 @@
             <div class="product-card">
                 <div class="new-tag">New Arrivals</div>
                 <div class="product-card-image">
-                    <img src="Images/AVIF/pr-9.webp" alt="V-Neck Soft Knit Sweater">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-9.webp" alt="V-Neck Soft Knit Sweater">
+                    </a>
                     <button class="product-card-wishlist">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
-                <h3 class="product-card-name">V-Neck Soft Knit Sweater</h3>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Minimal Code Set</h3>
                 <div class="product-card-rating">
                     <div class="product-card-stars">
                         <i class="fas fa-star"></i>
@@ -323,12 +393,17 @@
             <!-- Product 2 -->
             <div class="product-card">
                 <div class="product-card-image">
-                    <img src="Images/AVIF/pr-10.webp" alt="Dolman T-Shirt">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-10.webp" alt="Dolman T-Shirt">
+                    </a>
                     <button class="product-card-wishlist">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
-                <h3 class="product-card-name">Dolman T-Shirt</h3>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Long Sleeve Sweater</h3>
                 <div class="product-card-rating">
                     <div class="product-card-stars">
                         <i class="fas fa-star"></i>
@@ -348,12 +423,17 @@
             <!-- Product 3 -->
             <div class="product-card">
                 <div class="product-card-image">
-                    <img src="Images/AVIF/pr-11.webp" alt="Long Sleeve Sweater">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-11.webp" alt="Long Sleeve Sweater">
+                    </a>
                     <button class="product-card-wishlist">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
-                <h3 class="product-card-name">Long Sleeve Sweater</h3>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Doman T shirt</h3>
                 <div class="product-card-rating">
                     <div class="product-card-stars">
                         <i class="fas fa-star"></i>
@@ -372,12 +452,17 @@
             <!-- Product 4 -->
             <div class="product-card">
                 <div class="product-card-image">
-                    <img src="Images/AVIF/pr-12.webp" alt="Vintage Sweatshirt">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-12.webp" alt="Vintage Sweatshirt">
+                    </a>
                     <button class="product-card-wishlist">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
-                <h3 class="product-card-name">Vintage Sweatshirt</h3>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Minimal Echo Line</h3>
                 <div class="product-card-rating">
                     <div class="product-card-stars">
                         <i class="fas fa-star"></i>
@@ -395,6 +480,336 @@
             </div>
         </div>
     </section>
+
+    <section class="related-products container" style="margin-top: 200px;">
+        <h2 class="section-title">Most Popular Products</h2>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="new-tag">New Arrivals</div>
+                <div class="product-card-image">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-1.webp" alt="V-Neck Soft Knit Sweater">
+                    </a>
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Faded Horizon Denim</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="product-card-review-count">(170)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$69.99</span>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-2.webp" alt="Dolman T-Shirt">
+                    </a>
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Coastal Chill SweatShirt</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="product-card-review-count">(220)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$79.99</span>
+                    <span class="product-card-original-price">$99.99</span>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-3.webp" alt="Long Sleeve Sweater">
+                    </a>
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Classic Fade Tee</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="product-card-review-count">(270)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$89.99</span>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-4.webp" alt="Vintage Sweatshirt">
+                    </a>
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">ModeEra TwinWear</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="product-card-review-count">(320)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$99.99</span>
+                    <span class="product-card-original-price">$119.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-products container">
+        <h2 class="section-title">You May Also Like</h2>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="new-tag">New Arrivals</div>
+                <div class="product-card-image">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-5.webp" alt="V-Neck Soft Knit Sweater">
+                    </a>
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Skyline Soft Knit</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="product-card-review-count">(170)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$69.99</span>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-6.webp" alt="Dolman T-Shirt">
+                    </a>
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">NightFall Puffer</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="product-card-review-count">(220)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$79.99</span>
+                    <span class="product-card-original-price">$99.99</span>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-7.webp" alt="Long Sleeve Sweater">
+                    </a>
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Graphite Vibe Tee</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="product-card-review-count">(270)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$89.99</span>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-card-image">
+                    <a href="product.html">
+                        <img src="Images/AVIF/pr-8.webp" alt="Vintage Sweatshirt">
+                    </a>
+                    <button class="product-card-wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <div class="cart-drawer-btn">
+                    <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                </div>
+                <h3 class="product-card-name atc-none">Steel Pulse Moto Jacket</h3>
+                <div class="product-card-rating">
+                    <div class="product-card-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="product-card-review-count">(320)</span>
+                </div>
+                <div class="product-card-price">
+                    <span class="product-card-current-price">$99.99</span>
+                    <span class="product-card-original-price">$119.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="color-product-body">
+        <div class="container color-change-product">
+            <div class="imgBx">
+                <img src="https://krazybox.in/module/uploads/2021/01/Black-Hanging.jpg" class="color-pr1"
+                    alt="Nike Jordan Proto-Lyte Image">
+                <img src="Images/AVIF/pr-13.avif" class="d-none color-pr2" alt="Nike Jordan Proto-Lyte Image">
+                <img src="Images/AVIF/pr-3.webp" alt="Nike Jordan Proto-Lyte Image" class="d-none color-pr3">
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h2>Jordan Proto-Lyte <br>
+                        <span>Running Collection</span>
+                    </h2>
+                    <p>
+                        Featuring soft foam cushioning and lightweight, woven fabric in the upper, the Jordan Proto-Lyte
+                        is
+                        made for all-day, bouncy comfort.
+                        Lightweight Breathability: Lightweight woven fabric with real or synthetic leather provides
+                        breathable support.
+                        Cushioned Comfort: A full-length foam midsole delivers lightweight, plush cushioning.
+                        Secure Traction: Exaggerated herringbone-pattern outsole offers traction on a variety of
+                        surfaces.
+                    </p>
+                    <p class="product-colors">Available Colors:
+                        <span class="black active" onclick="black()" data-color-primary="#000"
+                            data-color-sec="#212121"></span>
+                        <span class="red" onclick="red()" data-color-primary="#7E021C" data-color-sec="#bd072d"></span>
+                        <span class="orange" onclick="orange()" data-color-primary="#CE5B39"
+                            data-color-sec="#F18557"></span>
+                    </p>
+                    <h3>Rs. 12,800</h3>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Cart drawer -->
+    <div class="cart-drawer cart-drawer-right">
+        <h4>Your Cart</h4>
+        <div class="cart-drawer-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="drawer-content">
+            <div class="cart-item mt-4">
+                <div class="cart-item-info">
+                    <div class="cart-item-image">
+                        <img src="Images/AVIF/pr-1.webp" alt="Classic Comfort Sweatshirt">
+                    </div>
+                    <div class="cart-item-actions">
+                        <button class="remove-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="quantity-controls">
+                            <button class="qty-btn qty-minus">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item-text">
+                    <h5>Classic Comfort Sweatshirt</h5>
+                    <p class="cart-item-meta">Size: S | Color: Sage</p>
+                    <p class="cart-item-price">$79.99</p>
+                </div>
+            </div>
+
+            <div class="cart-summary-section">
+                <span class="summary-label">Subtotal</span>
+                <span class="summary-value" id="cart-subtotal">$79.99</span>
+            </div>
+
+            <a href="checkout.html"><button class="btn1 btn-primary" style="width: 100%;">Checkout</button></a>
+        </div>
+    </div>
 
     <!-- Testimonial Section Start -->
     <section class="testimonial text-center" style="margin-block: 100px;">
@@ -411,28 +826,28 @@
                     <div class="carousel-item active">
                         <div class="testimonial4_slide">
                             <img src="Images/customer1.webp" class="img-circle img-responsive" />
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book. </p>
-                            <h4>Client 1</h4>
+                            <p>I bought a matching set from this store and it’s become my go-to outfit. The fabric feels
+                                luxurious, and the fit is perfect. Got so many compliments the first time I wore it!
+                                Shipping was fast, and the packaging was gorgeous too. Highly recommend! </p>
+                            <h4>Ayyoub Ansari</h4>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="testimonial4_slide">
                             <img src="Images/customer1.webp" class="img-circle img-responsive" />
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book. </p>
-                            <h4>Client 2</h4>
+                            <p>I’ve ordered twice now and both experiences have been flawless. The clothes look just
+                                like the photos, the sizing guide is accurate, and the styles are super on-trend. Plus,
+                                their customer service actually responds quickly—love that!</p>
+                            <h4>Yousuf Punk</h4>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="testimonial4_slide">
                             <img src="Images/customer1.webp" class="img-circle img-responsive" />
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book. </p>
-                            <h4>Client 3</h4>
+                            <p>Wasn't sure what to expect, but I'm so glad I gave this store a try. The dress I ordered
+                                feels like designer quality for half the price. It arrived quickly and fits beautifully.
+                                I’ve already got my eye on a few more pieces!</p>
+                            <h4>Bilal Ambia</h4>
                         </div>
                     </div>
                 </div>
@@ -485,25 +900,25 @@
     <!-- Contact Section End -->
 
     <!-- Infinite Slider Start -->
-    <div class="infinite-slider">
-        <div class="slider container-fluid">
-            <div class="slider-item">
-                <img src="Images/truck.png" alt="Slider Image 1">
-                <h6 class="">Free Delivery</h6>
-                <p>Far far away, behind the word mountains, far from the countries.</p>
-            </div>
-            <div class="slider-item">
-                <img src="Images/protection.png" alt="Slider Image 2">
-                <h6 class="">Secure Payments</h6>
-                <p>Far far away, behind the word mountains, far from the countries.</p>
-            </div>
-            <div class="slider-item">
-                <img src="Images/back.png" alt="Slider Image 3">
-                <h6 class="">Simple Returns</h6>
-                <p>Far far away, behind the word mountains, far from the countries.</p>
-            </div>
+
+    <div class="slider container-fluid">
+        <div class="slider-item">
+            <img src="Images/truck.png" alt="Slider Image 1">
+            <h6 class="">Fast & Free Delivery</h6>
+            <p>Free delivery on all orders</p>
+        </div>
+        <div class="slider-item">
+            <img src="Images/protection.png" alt="Slider Image 2">
+            <h6 class="">Secure Payments</h6>
+            <p>Payment are secure by google</p>
+        </div>
+        <div class="slider-item">
+            <img src="Images/back.png" alt="Slider Image 3">
+            <h6 class="">Simple Returns</h6>
+            <p>Easily Returnable within 14 days</p>
         </div>
     </div>
+
     <!-- Infinite Slider End -->
 
     <!-- Footer Start -->
@@ -517,40 +932,44 @@
                     <p>The customer is at the heart of our unique business model, which includes design</p>
                     <div class="footer_main_social">
                         <div class="social-icons mt-5">
-                            <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/ammaransari749" target="_blank" class="text-white"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/Ammar7409" target="_blank" class="text-white"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/itz_ammar_ansari_?igsh=MXFlanIxMHZlYnNoeQ%3D%3D"
+                                target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ammar-ansari749" target="_blank" class="text-white"><i
+                                    class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="shopping1 col-3-md-3 col-sm-12">
-                    <h4>SHOPPING</h4>
-                    <a href="">
-                        <p>Clothing Store</p>
+                    <h4>Pages</h4>
+                    <a>
+                        <p>Home</p>
                     </a>
-                    <a href="">
-                        <p>Trending Shoes</p>
+                    <a>
+                        <p>Shop</p>
                     </a>
-                    <a href="">
-                        <p>Accessories</p>
+                    <a>
+                        <p>About Us</p>
                     </a>
-                    <a href="">
-                        <p>Sale</p>
+                    <a>
+                        <p>Checkout</p>
                     </a>
                 </div>
                 <div class="shopping2 col-3-md-3 col-sm-12">
-                    <h4>SHOPPING</h4>
-                    <a href="">
+                    <h4>Help</h4>
+                    <a>
                         <p>Contact Us</p>
                     </a>
-                    <a href="">
+                    <a>
                         <p>Payment Methods</p>
                     </a>
-                    <a href="">
+                    <a>
                         <p>Delivary</p>
                     </a>
-                    <a href="">
+                    <a>
                         <p>Return & Exchanges</p>
                     </a>
                 </div>
@@ -563,13 +982,38 @@
             </div>
 
             <div class="footer_copyright">
-                <p>Copyright © 2024&nbsp;2020 All rights reserved |</p>
+                <p>Copyright © 2024&nbsp;2020 All rights reserved | Made by Ammar Tariq</p>
             </div>
         </div>
 
     </footer>
     <!-- Footer End -->
 
+    <script>
+        // Quantity controls
+        let quantity = 1;
+        const price = 79.99;
+
+        function updateTotal() {
+            const total = (price * quantity).toFixed(2);
+            cartSubtotal.textContent = `${total}`;
+        }
+
+        qtyPlus.addEventListener('click', () => {
+            quantity++;
+            qtyDisplay.textContent = quantity;
+            updateTotal();
+        });
+
+        qtyMinus.addEventListener('click', () => {
+            if (quantity > 1) {
+                quantity--;
+                qtyDisplay.textContent = quantity;
+                updateTotal();
+            }
+        });
+
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
@@ -581,4 +1025,4 @@
     <script src="app.js"></script>
 </body>
 
-</html>
+</html>               

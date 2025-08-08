@@ -4,40 +4,573 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ta Labels - Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <style>
-        
-    
     </style>
 
 </head>
 
 <body>
-    <div class="car-about">
-        <header class="navbar-shop sticky">
-            <a href="#" class="logo"><img src="Logo/ta-logo-transparent.png" alt="TA">Labels</a>
+
+    <!-- Hero Start -->
+
+    <div class="car-shop">
+        <header class="navbar-shop sticky bg-white">
             <div class="menu-btn">
                 <div class="menu-btn__lines"></div>
             </div>
+            <a href="#" class="logo"><img src="Logo/ta-logo-black.png" alt="TA">Labels</a>
             <ul class="menu-items">
                 <li><a href="index.html" class="menu-item fs-5 after">Home</a></li>
-                <li><a href="shop.html" class="menu-item fs-5 after">Shop</a></li>
-                <li><a href="product.html" class="menu-item fs-5 after">Products</a></li>
+                <li><a href="shop.html" class="menu-item fs-5 after active">Shop</a></li>
+                <li class="dp-menu" onclick="sidebardrop()">
+                    <span href="" class="menu-item fs-5 after">Pages <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                    <ul class="sidebar-dropdown">
+                        <li><a href="signup.html" class="">Login/SignUp</a></li>
+                        <li><a href="product.html" class="">Product Details</a></li>
+                        <li><a href="shopcart.html" class="">Shopping Cart</a></li>
+                        <li><a href="checkout.html" class="">Checkout</a></li>
+                    </ul>
+                    <ul class="dropdown">
+                        <li><a href="signup.html" class="">Login/SignUp</a></li>
+                        <li><a href="product.html" class="">Product Details</a></li>
+                        <li><a href="shopcart.html" class="">Shopping Cart</a></li>
+                        <li><a href="checkout.html" class="">Checkout</a></li>
+                    </ul>
+                </li>
                 <li><a href="about.html" class="menu-item fs-5 after">About</a></li>
                 <li><a href="contact.html" class="menu-item fs-5 after">Contact</a></li>
             </ul>
+            <div class="nav-user d-flex">
+                <div class="cart-drawer-btn me-2">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <a href="signup.html"><i class="fa-regular fa-circle-user"></i></a>
+            </div>
         </header>
+
+        <h1 class="bannerfwc">Shop Now</h1>
+        <div class="bannerp">
+            <p class="bannerpara">Our Most Demanding Products</p>
+        </div>
+        <button class="bannershopnow"><a href="shop.html">SHOP NOW</a></button>
+
+        <div class="overlay"></div>
     </div>
 
-    <div class="overlay"></div>
+    <!-- Hero End -->
 
+    <div class="chef_heading" id="courses">
+        <h1>FEATURED PRODUCTS</h1>
+    </div>
+
+    <div class="shop-container container justify-content-between">
+        <!-- Shop SideBar -->
+        <div class="shop-box">
+            <div class="shop-search mb-5 ">
+                <input type="search" class="search" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="responsive-shop">
+                <div class="category mb-5 width">
+                    <h4>CATEGORIES</h4>
+                    <a href=""><span class="cat-span">All</span></a>
+                    <a href=""><span class="cat-span">Men</span></a>
+                    <a href=""><span class="cat-span">Women</span></a>
+                    <a href=""><span class="cat-span">Accessories</span></a>
+                </div>
+                <div class="price-filter mb-5 width">
+                    <h4>FILTER PRICE</h4>
+                    <span class="cat-span">Rs.500 &nbsp;-&nbsp; Rs.1000</span>
+                    <span class="cat-span">Rs.1000 - Rs.1500</span>
+                    <span class="cat-span">Rs.1500 - Rs.2000</span>
+                    <span class="cat-span">Rs.2000 - Rs.2500</span>
+                    <span class="cat-span">Rs.2500 +</span>
+                </div>
+                <div class="shop-size-selector width mb-5">
+                    <div class="size-selector" style="width: 200px; align-content: top;">
+                        <h4>Size</h4>
+                        <!-- <div class="option-label">Size: <span id="selected-size">S</span></div> -->
+                        <div class="size-options">
+                            <button class="size-option" data-size="XS">XS</button>
+                            <button class="size-option selected" data-size="S">S</button>
+                            <button class="size-option" data-size="M">M</button>
+                        </div>
+                        <div class="size-options">
+                            <button class="size-option" data-size="L">L</button>
+                            <button class="size-option" data-size="XL">XL</button>
+                            <button class="size-option" data-size="XXL">XXL</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Color selector -->
+                <div class="color-selector width ">
+                    <h4>Color</h4>
+                    <div class="color-options">
+                        <button class="color-option" style="background-color: rgb(242, 176, 78);">
+                            <span class="color-swatch"></span>
+                        </button>
+                        <button class="color-option" style="background-color: rgb(99, 96, 105);">
+                            <span class="color-swatch"></span>
+                        </button>
+                        <button class="color-option" style="background-color: rgb(87, 89, 78);">
+                            <span class="color-swatch"></span>
+                        </button>
+                        <button class="color-option selected" style="background-color: rgb(232, 186, 196);">
+                            <span class="color-swatch"></span>
+                        </button>
+                    </div>
+                    <div class="color-options mt-2">
+                        <button class="color-option" style="background-color: rgb(213, 193, 214);">
+                            <span class="color-swatch"></span>
+                        </button>
+                        <button class="color-option" style="background-color: rgb(237, 28, 35);">
+                            <span class="color-swatch"></span>
+                        </button>
+                        <button class="color-option" style="background-color: lightblue;">
+                            <span class="color-swatch"></span>
+                        </button>
+                        <button class="color-option" style="background-color: lightgreen;">
+                            <span class="color-swatch"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- Shop SideBar -->
+
+        <!-- Product Section Start -->
+
+
+        <section class="related-products container">
+            <!-- <h2 class="section-title">You May Also Like</h2> -->
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="new-tag">New Arrivals</div>
+                    <div class="product-card-image">
+                        <a href="product.html">
+                            <img src="Images/AVIF/pr-1.webp" alt="V-Neck Soft Knit Sweater">
+                        </a>
+                        <button class="product-card-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="cart-drawer-btn">
+                        <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                    </div>
+                    <h3 class="product-card-name atc-none">V-Neck Soft Knit Sweater</h3>
+                    <div class="product-card-rating">
+                        <div class="product-card-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="product-card-review-count">(170)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="product-card-current-price">$69.99</span>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <a href="product.html">
+                            <img src="Images/AVIF/pr-2.webp" alt="Dolman T-Shirt">
+                        </a>
+                        <button class="product-card-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="cart-drawer-btn">
+                        <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                    </div>
+                    <h3 class="product-card-name atc-none">Doman T Shirt</h3>
+                    <div class="product-card-rating">
+                        <div class="product-card-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="product-card-review-count">(220)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="product-card-current-price">$79.99</span>
+                        <span class="product-card-original-price">$99.99</span>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <a href="product.html">
+                            <img src="Images/AVIF/pr-3.webp" alt="Long Sleeve Sweater">
+                        </a>
+                        <button class="product-card-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="cart-drawer-btn">
+                        <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                    </div>
+                    <h3 class="product-card-name atc-none">Long Sleeve Sweater</h3>
+                    <div class="product-card-rating">
+                        <div class="product-card-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="product-card-review-count">(270)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="product-card-current-price">$89.99</span>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <a href="product.html">
+                            <img src="Images/AVIF/pr-4.webp" alt="Vintage Sweatshirt">
+                        </a>
+                        <button class="product-card-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="cart-drawer-btn">
+                        <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                    </div>
+                    <h3 class="product-card-name atc-none">Vintage Sweatshirt</h3>
+                    <div class="product-card-rating">
+                        <div class="product-card-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="product-card-review-count">(320)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="product-card-current-price">$99.99</span>
+                        <span class="product-card-original-price">$119.99</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products container">
+            <!-- <h2 class="section-title">You May Also Like</h2>+ -->
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="new-tag">New Arrivals</div>
+                    <div class="product-card-image">
+                        <a href="product.html">
+                            <img src="Images/AVIF/pr-5.webp" alt="V-Neck Soft Knit Sweater">
+                        </a>
+                        <button class="product-card-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="cart-drawer-btn">
+                        <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                    </div>
+                    <h3 class="product-card-name atc-none">V-Neck Soft Knit Sweater</h3>
+                    <div class="product-card-rating">
+                        <div class="product-card-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="product-card-review-count">(170)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="product-card-current-price">$69.99</span>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <a href="product.html">
+                            <img src="Images/AVIF/pr-6.webp" alt="Dolman T-Shirt">
+                        </a>
+                        <button class="product-card-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="cart-drawer-btn">
+                        <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                    </div>
+                    <h3 class="product-card-name atc-none">Doman T Shirt</h3>
+                    <div class="product-card-rating">
+                        <div class="product-card-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="product-card-review-count">(220)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="product-card-current-price">$79.99</span>
+                        <span class="product-card-original-price">$99.99</span>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <a href="product.html">
+                            <img src="Images/AVIF/pr-7.webp" alt="Long Sleeve Sweater">
+                        </a>
+                        <button class="product-card-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="cart-drawer-btn">
+                        <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                    </div>
+                    <h3 class="product-card-name atc-none">Long Sleeve Sweater</h3>
+                    <div class="product-card-rating">
+                        <div class="product-card-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="product-card-review-count">(270)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="product-card-current-price">$89.99</span>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <a href="product.html">
+                            <img src="Images/AVIF/pr-8.webp" alt="Vintage Sweatshirt">
+                        </a>
+                        <button class="product-card-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="cart-drawer-btn">
+                        <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                    </div>
+                    <h3 class="product-card-name atc-none">Vintage Sweatshirt</h3>
+                    <div class="product-card-rating">
+                        <div class="product-card-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="product-card-review-count">(320)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="product-card-current-price">$99.99</span>
+                        <span class="product-card-original-price">$119.99</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products container">
+            <!-- <h2 class="section-title">You May Also Like</h2> -->
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="new-tag">New Arrivals</div>
+                    <div class="product-card-image">
+                        <a href="product.html">
+                            <img src="Images/AVIF/pr-9.webp" alt="V-Neck Soft Knit Sweater">
+                        </a>
+                        <button class="product-card-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="cart-drawer-btn">
+                        <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                    </div>
+                    <h3 class="product-card-name atc-none">V-Neck Soft Knit Sweater</h3>
+                    <div class="product-card-rating">
+                        <div class="product-card-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="product-card-review-count">(170)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="product-card-current-price">$69.99</span>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <a href="product.html">
+                            <img src="Images/AVIF/pr-10.webp" alt="Dolman T-Shirt">
+                        </a>
+                        <button class="product-card-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="cart-drawer-btn">
+                        <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                    </div>
+                    <h3 class="product-card-name atc-none">Doman T Shirt</h3>
+                    <div class="product-card-rating">
+                        <div class="product-card-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="product-card-review-count">(220)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="product-card-current-price">$79.99</span>
+                        <span class="product-card-original-price">$99.99</span>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <a href="product.html">
+                            <img src="Images/AVIF/pr-11.webp" alt="Long Sleeve Sweater">
+                        </a>
+                        <button class="product-card-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="cart-drawer-btn">
+                        <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                    </div>
+                    <h3 class="product-card-name atc-none">Long Sleeve Sweater</h3>
+                    <div class="product-card-rating">
+                        <div class="product-card-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="product-card-review-count">(270)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="product-card-current-price">$89.99</span>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-card-image">
+                        <a href="product.html">
+                            <img src="Images/AVIF/pr-12.webp" alt="Vintage Sweatshirt">
+                        </a>
+                        <button class="product-card-wishlist">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="cart-drawer-btn">
+                        <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+                    </div>
+                    <h3 class="product-card-name atc-none">Vintage Sweatshirt</h3>
+                    <div class="product-card-rating">
+                        <div class="product-card-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="product-card-review-count">(320)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="product-card-current-price">$99.99</span>
+                        <span class="product-card-original-price">$119.99</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product Section Ends -->
+
+    </div>
+
+    <!-- Cart drawer -->
+    <div class="cart-drawer cart-drawer-right">
+        <h4>Your Cart</h4>
+        <div class="cart-drawer-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="drawer-content">
+            <div class="cart-item mt-4">
+                <div class="cart-item-info">
+                    <div class="cart-item-image">
+                        <img src="Images/AVIF/pr-1.webp" alt="Classic Comfort Sweatshirt">
+                    </div>
+                    <div class="cart-item-actions">
+                        <button class="remove-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="quantity-controls">
+                            <button class="qty-btn qty-minus">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item-text">
+                    <h5>Classic Comfort Sweatshirt</h5>
+                    <p class="cart-item-meta">Size: S | Color: Sage</p>
+                    <p class="cart-item-price">$79.99</p>
+                </div>
+            </div>
+
+            <div class="cart-summary-section">
+                <span class="summary-label">Subtotal</span>
+                <span class="summary-value" id="cart-subtotal">$79.99</span>
+            </div>
+
+            <a href="checkout.html"><button class="btn1 btn-primary" style="width: 100%;">Checkout</button></a>
+        </div>
+    </div>
 
     <!-- Footer Start -->
-    <footer>
+    <footer class="mt-5">
         <div class="container-xxl">
             <div class="footer_content row">
                 <div class="pay_cards col-3-md-3 col-sm-12">
@@ -47,40 +580,40 @@
                     <p>The customer is at the heart of our unique business model, which includes design</p>
                     <div class="footer_main_social">
                         <div class="social-icons mt-5">
-                            <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/ammaransari749" target="_blank" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/Ammar7409" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/itz_ammar_ansari_?igsh=MXFlanIxMHZlYnNoeQ%3D%3D" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ammar-ansari749" target="_blank" class="text-white"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="shopping1 col-3-md-3 col-sm-12">
-                    <h4>SHOPPING</h4>
-                    <a href="">
-                        <p>Clothing Store</p>
+                    <h4>Pages</h4>
+                    <a>
+                        <p>Home</p>
                     </a>
-                    <a href="">
-                        <p>Trending Shoes</p>
+                    <a>
+                        <p>Shop</p>
                     </a>
-                    <a href="">
-                        <p>Accessories</p>
+                    <a>
+                        <p>About Us</p>
                     </a>
-                    <a href="">
-                        <p>Sale</p>
+                    <a>
+                        <p>Checkout</p>
                     </a>
                 </div>
                 <div class="shopping2 col-3-md-3 col-sm-12">
-                    <h4>SHOPPING</h4>
-                    <a href="">
+                    <h4>Help</h4>
+                    <a>
                         <p>Contact Us</p>
                     </a>
-                    <a href="">
+                    <a>
                         <p>Payment Methods</p>
                     </a>
-                    <a href="">
+                    <a>
                         <p>Delivary</p>
                     </a>
-                    <a href="">
+                    <a>
                         <p>Return & Exchanges</p>
                     </a>
                 </div>
@@ -93,7 +626,7 @@
             </div>
 
             <div class="footer_copyright">
-                <p>Copyright © 2024&nbsp;2020 All rights reserved | This template is made with by Colorlib</p>
+                <p>Copyright © 2024&nbsp;2020 All rights reserved | Made by Ammar Tariq</p>
             </div>
         </div>
 
@@ -104,7 +637,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="app.js"></script>
+
 </body>
 
 </html>

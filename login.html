@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        .sign-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .table {
+            width: 650px;
+            margin-top: 10px;
+            padding: 40px 50px;
+            box-shadow: 0 0 15px 0 lightgray;
+        }
+
+        .table input {
+            width: 100%;
+            height: 45px;
+            font-size: 16px;
+            padding-left: 15px;
+            border: 1px solid lightgray;
+            font-family: sans-serif;
+            margin-block: 5px 10px;
+        }
+
+        .table input:focus {
+            outline: none;
+            border: 1px solid blue;
+        }
+
+        .table input::placeholder {
+            font-size: 14px;
+            color: grey;
+        }
+
+        .table button {
+            width: 120px;
+            background-color: var(--bs-brown);
+            color: white;
+            padding-block: 10px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        label {
+            font-weight: 500;
+        }
+
+        .su {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (max-width:550px) {
+
+            .table {
+                padding-inline: 25px;
+            }
+
+            .su {
+                display: block;
+            }
+
+            .table button {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+        <!-- Hero Start -->
+    <div class="">
+        <header class="navbar-shop sticky bg-white">
+            <div class="menu-btn">
+                <div class="menu-btn__lines"></div>
+            </div>
+            <a href="#" class="logo"><img src="Logo/ta-logo-black.png" alt="TA">Labels</a>
+            <ul class="menu-items">
+                <li><a href="index.html" class="menu-item fs-5 after">Home</a></li>
+                <li><a href="shop.html" class="menu-item fs-5 after">Shop</a></li>
+                <li class="dp-menu" onclick="sidebardrop()">
+                    <span href="" class="menu-item fs-5 after active">Pages <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                    <ul class="sidebar-dropdown">
+                        <li><a href="signup.html" class="">Login/SignUp</a></li>
+                        <li><a href="product.html" class="">Product Details</a></li>
+                        <li><a href="shopcart.html" class="">Shopping Cart</a></li>
+                        <li><a href="checkout.html" class="">Checkout</a></li>
+                    </ul>
+                    <ul class="dropdown">
+                        <li><a href="signup.html" class="">Login/SignUp</a></li>
+                        <li><a href="product.html" class="">Product Details</a></li>
+                        <li><a href="shopcart.html" class="">Shopping Cart</a></li>
+                        <li><a href="checkout.html" class="">Checkout</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" class="menu-item fs-5 after">About</a></li>
+                <li><a href="contact.html" class="menu-item fs-5 after">Contact</a></li>
+            </ul>
+            <div class="nav-user d-flex">
+                <div class="cart-drawer-btn me-2">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <a href="signup.html"><i class="fa-regular fa-circle-user"></i></a>
+            </div>
+        </header>
+
+        <div class="overlay"></div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Cart drawer -->
+    <div class="cart-drawer cart-drawer-right">
+        <h4>Your Cart</h4>
+        <div class="cart-drawer-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="drawer-content">
+            <div class="cart-item mt-4">
+                <div class="cart-item-info">
+                    <div class="cart-item-image">
+                        <img src="Images/AVIF/pr-1.webp" alt="Classic Comfort Sweatshirt">
+                    </div>
+                    <div class="cart-item-actions">
+                        <button class="remove-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="quantity-controls">
+                            <button class="qty-btn qty-minus">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item-text">
+                    <h5>Classic Comfort Sweatshirt</h5>
+                    <p class="cart-item-meta">Size: S | Color: Sage</p>
+                    <p class="cart-item-price">$79.99</p>
+                </div>
+            </div>
+
+            <div class="cart-summary-section">
+                <span class="summary-label">Subtotal</span>
+                <span class="summary-value" id="cart-subtotal">$79.99</span>
+            </div>
+
+            <a href="checkout.html"><button class="btn1 btn-primary" style="width: 100%;">Checkout</button></a>
+        </div>
+    </div>
+
+    <div class="sign-form">
+        <div class="table">
+            <div style="text-align: center; font-size: 30px; font-weight: 600;">Login</div>
+
+            <h2 style="text-align: center; font-size: 15px; font-weight: 300; padding-block: 10px;" class="respon-font">
+                Enter
+                Login details to get access</h2>
+
+            <div>
+                <label style="padding-bottom: 10px;">Email</label><br>
+                <input type="email" placeholder="Enter Your Email Adress" id="email">
+            </div>
+
+            <div>
+                <label style="padding-bottom: 10px;">Password</label><br>
+                <input type="text" placeholder="Enter Your Password" id="pass">
+            </div>
+
+            <div id="wrongpassdiv">
+                <div style=" text-align: center; padding-block: 5px;"><a href=""
+                        style="color: red; background-color: transparent;" id="wrongpass"></a></div>
+            </div>
+
+            <div class="su" style="padding-block: 0;">
+                <p>Don’t have an account ?<a style="color: rgb(216, 152, 89); background-color: transparent;"
+                        href="signup.html">Sign Up</a>here</p>
+                <button onclick="login()">Login</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        function login() {
+            let email = document.getElementById("email").value;
+            let pass = document.getElementById("pass").value;
+
+            let localemail = localStorage.getItem("Email")
+            let localpass = localStorage.getItem("Pass")
+
+
+            if (email == localemail) {
+
+                if (pass == localpass) {
+
+                    window.location.href = "index.html"
+
+                }
+
+                else {
+                    document.getElementById("wrongpass").innerHTML = "Sorry, your password doesn't match. Please <br> double-check your password."
+                }
+
+
+            }
+
+            else {
+                document.getElementById("wrongpass").innerHTML = "Sorry, your password doesn't match. Please <br> double-check your password."
+
+            }
+
+            document.getElementById("user").value = "";
+            document.getElementById("pass").value = "";
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

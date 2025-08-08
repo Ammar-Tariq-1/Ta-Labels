@@ -8,67 +8,82 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
 </head>
 
-<body>
+<body class="product-html">
 
   <div class="car-product">
-      <header class="navbar-shop sticky ">
-        <a href="#" class="logo"><img src="Logo/ta-logo-transparent.png" alt="TA">Labels</a>
-        <div class="menu-btn">
-          <div class="menu-btn__lines"></div>
+    <header class="navbar-shop sticky bg-white">
+      <div class="menu-btn">
+        <div class="menu-btn__lines"></div>
+      </div>
+      <a href="#" class="logo"><img src="Logo/ta-logo-black.png" alt="TA">Labels</a>
+      <ul class="menu-items">
+        <li><a href="index.html" class="menu-item fs-5 after">Home</a></li>
+        <li><a href="shop.html" class="menu-item fs-5 after">Shop</a></li>
+        <li class="dp-menu" onclick="sidebardrop()">
+          <span href="" class="menu-item fs-5 after  active">Pages <i class="fa-solid fa-angle-down"></i>
+          </span>
+          <ul class="sidebar-dropdown">
+            <li><a href="signup.html" class="">Login/SignUp</a></li>
+            <li><a href="product.html" class="">Product Details</a></li>
+            <li><a href="shopcart.html" class="">Shopping Cart</a></li>
+            <li><a href="checkout.html" class="">Checkout</a></li>
+          </ul>
+          <ul class="dropdown">
+            <li><a href="signup.html" class="">Login/SignUp</a></li>
+            <li><a href="product.html" class="">Product Details</a></li>
+            <li><a href="shopcart.html" class="">Shopping Cart</a></li>
+            <li><a href="checkout.html" class="">Checkout</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html" class="menu-item fs-5 after">About</a></li>
+        <li><a href="contact.html" class="menu-item fs-5 after">Contact</a></li>
+      </ul>
+      <div class="nav-user d-flex">
+        <div class="cart-drawer-btn me-2">
+          <i class="fas fa-shopping-cart"></i>
         </div>
-        <ul class="menu-items">
-          <li><a href="index.html" class="menu-item fs-5 after">Home</a></li>
-          <li><a href="shop.html" class="menu-item fs-5 after">Shop</a></li>
-          <li><a href="product.html" class="menu-item fs-5 after">Products</a></li>
-          <li><a href="about.html" class="menu-item fs-5 after">About</a></li>
-          <li><a href="contact.html" class="menu-item fs-5 after">Contact</a></li>
-        </ul>
-      </header>
+        <a href="signup.html"><i class="fa-regular fa-circle-user"></i></a>
+      </div>
+    </header>
 
-      <h1 class="bannerfwc mt-5">Product Details</h1>
+    <div class="container">
+      <h1 class="bannerfwc mt-4">Product Details</h1>
+      <div class="d-flex gap-1 ">
+        <p>Home</p>><p>Pages</p>><p>Product Details</p>
+      </div>
     </div>
+
+    <div class="overlay"></div>
+  </div>
 
   <!-- Main content -->
   <main class="container mt-5">
-
-    <div class="overlay"></div>
-
     <!-- Product layout -->
     <div class="product-layout">
       <!-- Product images -->
       <div class="product-images">
         <div class="main-image">
-          <img src="Images/AVIF/pr-6.webp"
-            alt="Classic Comfort Sweatshirt - main image" id="main-product-image">
+          <img src="Images/AVIF/pr-6.webp" alt="Classic Comfort Sweatshirt - main image" id="main-product-image">
         </div>
         <div class="image-thumbnails">
-          <button class="thumbnail-btn active"
-            data-image="Images/AVIF/pr-6.webp">
-            <img src="Images/AVIF/pr-6.webp"
-              alt="Classic Comfort Sweatshirt - view 1">
+          <button class="thumbnail-btn active" data-image="Images/AVIF/pr-6.webp">
+            <img src="Images/AVIF/pr-6.webp" alt="Classic Comfort Sweatshirt - view 1">
           </button>
-          <button class="thumbnail-btn"
-            data-image="Images/AVIF/pr-7.webp">
-            <img src="Images/AVIF/pr-7.webp"
-              alt="Classic Comfort Sweatshirt - view 2">
+          <button class="thumbnail-btn" data-image="Images/AVIF/pr-7.webp">
+            <img src="Images/AVIF/pr-7.webp" alt="Classic Comfort Sweatshirt - view 2">
           </button>
-          <button class="thumbnail-btn"
-            data-image="Images/AVIF/pr-4.webp">
-            <img src="Images/AVIF/pr-4.webp"
-              alt="Classic Comfort Sweatshirt - view 3">
+          <button class="thumbnail-btn" data-image="Images/AVIF/pr-4.webp">
+            <img src="Images/AVIF/pr-4.webp" alt="Classic Comfort Sweatshirt - view 3">
           </button>
-          <button class="thumbnail-btn"
-            data-image="Images/AVIF/pr-8.webp">
-            <img src="Images/AVIF/pr-8.webp"
-              alt="Classic Comfort Sweatshirt - view 4">
+          <button class="thumbnail-btn" data-image="Images/AVIF/pr-8.webp">
+            <img src="Images/AVIF/pr-8.webp" alt="Classic Comfort Sweatshirt - view 4">
           </button>
-          <button class="thumbnail-btn"
-            data-image="Images/AVIF/pr-3.webp">
-            <img src="Images/AVIF/pr-3.webp"
-              alt="Classic Comfort Sweatshirt - view 5">
+          <button class="thumbnail-btn" data-image="Images/AVIF/pr-3.webp">
+            <img src="Images/AVIF/pr-3.webp" alt="Classic Comfort Sweatshirt - view 5">
           </button>
         </div>
       </div>
@@ -109,8 +124,8 @@
 
         <!-- Action buttons -->
         <div class="actions">
-          <button class="btn btn-primary" id="add-to-cart">Add to Cart</button>
-          <button class="btn btn-outline">Buy Now</button>
+          <div class="cart-drawer-btn"><button class="btn1 btn-primary" id="add-to-cart">Add to Cart</button></div>
+          <a href="checkout.html" ><button class="btn1 btn-outline" style="width: 100%;">Buy Now</button></a>
         </div>
 
         <!-- Product actions -->
@@ -221,7 +236,7 @@
               </div>
 
               <div class="write-review">
-                <button class="btn btn-outline" style="width: 100%">Write a Review</button>
+                <button class="btn1 btn-outline" style="width: 100%">Write a Review</button>
               </div>
             </div>
 
@@ -340,7 +355,7 @@
               </div>
 
               <div class="text-center" style="margin-top: 1.5rem;">
-                <button class="btn btn-outline">Load More Reviews</button>
+                <button class="btn1 btn-outline">Load More Reviews</button>
               </div>
             </div>
           </div>
@@ -353,174 +368,194 @@
             <h3 style="font-size: 1.125rem; font-weight: 500; margin-bottom: 0.5rem;">Have questions about this product?
             </h3>
             <p style="color: #6b7280; margin-bottom: 1rem;">Ask the community or share your knowledge</p>
-            <button class="btn btn-outline">Ask a Question</button>
+            <button class="btn1 btn-outline">Ask a Question</button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Related products -->
-    <section class="related-products">
-      <h2 class="section-title">You May Also Like</h2>
-      <div class="products-grid">
-        <!-- Product 1 -->
-        <div class="product-card">
-          <div class="new-tag">New Arrivals</div>
-          <div class="product-card-image">
-            <img src="https://images.unsplash.com/photo-1543076447-215ad9ba6923?w=400&auto=format&fit=crop&q=60"
-              alt="V-Neck Soft Knit Sweater">
-            <button class="product-card-wishlist">
-              <i class="fas fa-heart"></i>
-            </button>
-          </div>
-          <h3 class="product-card-name">V-Neck Soft Knit Sweater</h3>
-          <div class="product-card-rating">
-            <div class="product-card-stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
+    <div class="product-card-rating">
+      <section class="related-products container">
+        <!-- <h2 class="section-title">You May Also Like</h2> -->
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="new-tag">New Arrivals</div>
+            <div class="product-card-image">
+              <a href="product.html">
+                <img src="Images/AVIF/pr-1.webp" alt="V-Neck Soft Knit Sweater">
+              </a>
+              <button class="product-card-wishlist">
+                <i class="fas fa-heart"></i>
+              </button>
             </div>
-            <span class="product-card-review-count">(170)</span>
+            <div class="cart-drawer-btn">
+              <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+            </div>
+            <h3 class="product-card-name atc-none">V-Neck Soft Knit Sweater</h3>
+            <div class="product-card-rating">
+              <div class="product-card-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="product-card-review-count">(170)</span>
+            </div>
+            <div class="product-card-price">
+              <span class="product-card-current-price">$69.99</span>
+            </div>
           </div>
-          <div class="product-card-price">
-            <span class="product-card-current-price">$69.99</span>
-          </div>
-        </div>
 
-        <!-- Product 2 -->
-        <div class="product-card">
-          <div class="product-card-image">
-            <img src="https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?w=400&auto=format&fit=crop&q=60"
-              alt="Dolman T-Shirt">
-            <button class="product-card-wishlist">
-              <i class="fas fa-heart"></i>
-            </button>
-          </div>
-          <h3 class="product-card-name">Dolman T-Shirt</h3>
-          <div class="product-card-rating">
-            <div class="product-card-stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-card-image">
+              <a href="product.html">
+                <img src="Images/AVIF/pr-2.webp" alt="Dolman T-Shirt">
+              </a>
+              <button class="product-card-wishlist">
+                <i class="fas fa-heart"></i>
+              </button>
             </div>
-            <span class="product-card-review-count">(220)</span>
+            <div class="cart-drawer-btn">
+              <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+            </div>
+            <h3 class="product-card-name atc-none">Doman T Shirt</h3>
+            <div class="product-card-rating">
+              <div class="product-card-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="product-card-review-count">(220)</span>
+            </div>
+            <div class="product-card-price">
+              <span class="product-card-current-price">$79.99</span>
+              <span class="product-card-original-price">$99.99</span>
+            </div>
           </div>
-          <div class="product-card-price">
-            <span class="product-card-current-price">$79.99</span>
-            <span class="product-card-original-price">$99.99</span>
-          </div>
-        </div>
 
-        <!-- Product 3 -->
-        <div class="product-card">
-          <div class="product-card-image">
-            <img src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=400&auto=format&fit=crop&q=60"
-              alt="Long Sleeve Sweater">
-            <button class="product-card-wishlist">
-              <i class="fas fa-heart"></i>
-            </button>
-          </div>
-          <h3 class="product-card-name">Long Sleeve Sweater</h3>
-          <div class="product-card-rating">
-            <div class="product-card-stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-card-image">
+              <a href="product.html">
+                <img src="Images/AVIF/pr-3.webp" alt="Long Sleeve Sweater">
+              </a>
+              <button class="product-card-wishlist">
+                <i class="fas fa-heart"></i>
+              </button>
             </div>
-            <span class="product-card-review-count">(270)</span>
+            <div class="cart-drawer-btn">
+              <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+            </div>
+            <h3 class="product-card-name atc-none">Long Sleeve Sweater</h3>
+            <div class="product-card-rating">
+              <div class="product-card-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="product-card-review-count">(270)</span>
+            </div>
+            <div class="product-card-price">
+              <span class="product-card-current-price">$89.99</span>
+            </div>
           </div>
-          <div class="product-card-price">
-            <span class="product-card-current-price">$89.99</span>
-          </div>
-        </div>
 
-        <!-- Product 4 -->
-        <div class="product-card">
-          <div class="product-card-image">
-            <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=400&auto=format&fit=crop&q=60"
-              alt="Vintage Sweatshirt">
-            <button class="product-card-wishlist">
-              <i class="fas fa-heart"></i>
-            </button>
-          </div>
-          <h3 class="product-card-name">Vintage Sweatshirt</h3>
-          <div class="product-card-rating">
-            <div class="product-card-stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-card-image">
+              <a href="product.html">
+                <img src="Images/AVIF/pr-4.webp" alt="Vintage Sweatshirt">
+              </a>
+              <button class="product-card-wishlist">
+                <i class="fas fa-heart"></i>
+              </button>
             </div>
-            <span class="product-card-review-count">(320)</span>
-          </div>
-          <div class="product-card-price">
-            <span class="product-card-current-price">$99.99</span>
-            <span class="product-card-original-price">$119.99</span>
+            <div class="cart-drawer-btn">
+              <h3 class="product-card-name addtocart" style="color: red;">+ Add to Cart</h3>
+            </div>
+            <h3 class="product-card-name atc-none">Vintage Sweatshirt</h3>
+            <div class="product-card-rating">
+              <div class="product-card-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="product-card-review-count">(320)</span>
+            </div>
+            <div class="product-card-price">
+              <span class="product-card-current-price">$99.99</span>
+              <span class="product-card-original-price">$119.99</span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
   </main>
 
   <!-- Sticky cart -->
   <div class="sticky-cart">
     <div class="sticky-cart-container">
-      <div class="cart-preview">
-        <button class="cart-btn" id="open-cart">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="cart-count">1</span>
-        </button>
-        <span class="cart-items">1 item</span>
+      <div class="cart-drawer-btn">
+        <div class="cart-preview">
+          <button class="cart-btn" id="open-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">1</span>
+          </button>
+          <span class="cart-items">1 item</span>
+        </div>
       </div>
       <div class="cart-summary">
         <div>
           <span class="cart-total-label">Total:</span>
           <div class="cart-total-price">$79.99</div>
         </div>
-        <button class="btn btn-primary">Checkout</button>
+        <button class="btn1 btn-primary">Checkout</button>
       </div>
     </div>
   </div>
 
   <!-- Cart drawer -->
-  <div class="drawer-backdrop" id="drawer-backdrop"></div>
-  <div class="drawer" id="cart-drawer">
-    <div class="drawer-header">
-      <h3 class="drawer-title">Your Cart</h3>
+  <div class="cart-drawer cart-drawer-right">
+    <h4>Your Cart</h4>
+    <div class="cart-drawer-close-btn">
+      <i class="fa-solid fa-xmark"></i>
     </div>
+
     <div class="drawer-content">
-      <div class="cart-item">
+      <div class="cart-item mt-4">
         <div class="cart-item-info">
           <div class="cart-item-image">
-            <img src="https://images.unsplash.com/photo-1572495175742-35d0f10406f6?w=600&auto=format&fit=crop&q=60"
-              alt="Classic Comfort Sweatshirt">
+            <img src="Images/AVIF/pr-1.webp" alt="Classic Comfort Sweatshirt">
           </div>
-          <div>
-            <h4>Classic Comfort Sweatshirt</h4>
-            <p class="cart-item-meta">Size: S | Color: Sage</p>
-            <p class="cart-item-price">$79.99</p>
+          <div class="cart-item-actions">
+            <button class="remove-btn">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="quantity-controls">
+              <button class="qty-btn qty-minus">
+                <i class="fas fa-minus"></i>
+              </button>
+              <span class="qty-display">1</span>
+              <button class="qty-btn qty-plus">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="cart-item-actions">
-          <button class="remove-btn">
-            <i class="fas fa-times"></i>
-          </button>
-          <div class="quantity-controls">
-            <button class="qty-btn qty-minus">
-              <i class="fas fa-minus"></i>
-            </button>
-            <span class="qty-display">1</span>
-            <button class="qty-btn qty-plus">
-              <i class="fas fa-plus"></i>
-            </button>
-          </div>
+        <div class="cart-item-text">
+          <h5>Classic Comfort Sweatshirt</h5>
+          <p class="cart-item-meta">Size: S | Color: Sage</p>
+          <p class="cart-item-price">$79.99</p>
         </div>
       </div>
 
@@ -529,196 +564,78 @@
         <span class="summary-value" id="cart-subtotal">$79.99</span>
       </div>
 
-      <button class="btn btn-primary" style="width: 100%;">Checkout</button>
+      <a href="checkout.html"><button class="btn1 btn-primary" style="width: 100%;">Checkout</button></a>
     </div>
   </div>
 
   <!-- Footer Start -->
   <footer>
-    <div class="container-xl mt-5 ">
-      <div class="footer_content row">
-        <div class="pay_cards col-3-md-3 col-sm-12">
+        <div class="container-xxl mt-5">
+            <div class="footer_content row">
+                <div class="pay_cards col-3-md-3 col-sm-12">
 
-          <h1 class="text-white"><img src="Logo/ta-logo-transparent.png" style="height: 80px; width: 80px;"
-              alt="TA">Labels</h1>
-          <p>The customer is at the heart of our unique business model, which includes design</p>
-          <div class="footer_main_social">
-            <div class="social-icons mt-5">
-              <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <h1 class="text-white"><img src="Logo/ta-logo-transparent.png" style="height: 80px; width: 80px;"
+                            alt="TA">Labels</h1>
+                    <p>The customer is at the heart of our unique business model, which includes design</p>
+                    <div class="footer_main_social">
+                        <div class="social-icons mt-5">
+                            <a href="https://www.facebook.com/ammaransari749" target="_blank" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/Ammar7409" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/itz_ammar_ansari_?igsh=MXFlanIxMHZlYnNoeQ%3D%3D" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ammar-ansari749" target="_blank" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping1 col-3-md-3 col-sm-12">
+                    <h4>Pages</h4>
+                    <a>
+                        <p>Home</p>
+                    </a>
+                    <a>
+                        <p>Shop</p>
+                    </a>
+                    <a>
+                        <p>About Us</p>
+                    </a>
+                    <a>
+                        <p>Checkout</p>
+                    </a>
+                </div>
+                <div class="shopping2 col-3-md-3 col-sm-12">
+                    <h4>Help</h4>
+                    <a>
+                        <p>Contact Us</p>
+                    </a>
+                    <a>
+                        <p>Payment Methods</p>
+                    </a>
+                    <a>
+                        <p>Delivary</p>
+                    </a>
+                    <a>
+                        <p>Return & Exchanges</p>
+                    </a>
+                </div>
+                <div class="news_letter col-3-md-3 col-sm-12">
+                    <h3>NEWS LETTER</h3>
+                    <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                    <input type="text" placeholder="Your email" required>
+                    <hr>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="shopping1 col-3-md-3 col-sm-12">
-          <h4>SHOPPING</h4>
-          <a href="">
-            <p>Clothing Store</p>
-          </a>
-          <a href="">
-            <p>Trending Shoes</p>
-          </a>
-          <a href="">
-            <p>Accessories</p>
-          </a>
-          <a href="">
-            <p>Sale</p>
-          </a>
-        </div>
-        <div class="shopping2 col-3-md-3 col-sm-12">
-          <h4>SHOPPING</h4>
-          <a href="">
-            <p>Contact Us</p>
-          </a>
-          <a href="">
-            <p>Payment Methods</p>
-          </a>
-          <a href="">
-            <p>Delivary</p>
-          </a>
-          <a href="">
-            <p>Return & Exchanges</p>
-          </a>
-        </div>
-        <div class="news_letter col-3-md-3 col-sm-12">
-          <h3>NEWS LETTER</h3>
-          <p>Be the first to know about new arrivals, look books, sales & promos!</p>
-          <input type="text" placeholder="Your email" required>
-          <hr>
-        </div>
-      </div>
 
-      <div class="footer_copyright">
-        <p>Copyright © 2024&nbsp;2020 All rights reserved | This template is made with by Colorlib</p>
-      </div>
-    </div>
+            <div class="footer_copyright">
+                <p>Copyright © 2024&nbsp;2020 All rights reserved | Made by Ammar Tariq</p>
+            </div>
+        </div>
 
-  </footer>
+    </footer>
   <!-- Footer End -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
-  <script>
-    // Image gallery functionality
-    const mainImage = document.getElementById('main-product-image');
-    const thumbnails = document.querySelectorAll('.thumbnail-btn');
-
-    thumbnails.forEach(thumb => {
-      thumb.addEventListener('click', () => {
-        // Update main image
-        mainImage.src = thumb.getAttribute('data-image');
-
-        // Update active thumbnail
-        thumbnails.forEach(t => t.classList.remove('active'));
-        thumb.classList.add('active');
-      });
-    });
-
-    // Color selector
-    const colorOptions = document.querySelectorAll('.color-option');
-    const selectedColorText = document.getElementById('selected-color');
-
-    colorOptions.forEach(option => {
-      option.addEventListener('click', () => {
-        // Update selected color
-        colorOptions.forEach(o => o.classList.remove('selected'));
-        option.classList.add('selected');
-
-        // Update text
-        selectedColorText.textContent = option.getAttribute('data-color-name');
-      });
-    });
-
-    // Size selector
-    const sizeOptions = document.querySelectorAll('.size-option');
-    const selectedSizeText = document.getElementById('selected-size');
-
-    sizeOptions.forEach(option => {
-      option.addEventListener('click', () => {
-        // Update selected size
-        sizeOptions.forEach(o => o.classList.remove('selected'));
-        option.classList.add('selected');
-
-        // Update text
-        selectedSizeText.textContent = option.getAttribute('data-size');
-      });
-    });
-
-    // Tab functionality
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const tabPanes = document.querySelectorAll('.tab-pane');
-
-    tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        // Update active tab button
-        tabBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        // Update active tab pane
-        const tabId = btn.getAttribute('data-tab') + '-tab';
-        tabPanes.forEach(pane => pane.classList.remove('active'));
-        document.getElementById(tabId).classList.add('active');
-      });
-    });
-
-    // Cart drawer functionality
-    const openCartBtn = document.getElementById('open-cart');
-    const cartBtn = document.getElementById('cart-button');
-    const cartDrawer = document.getElementById('cart-drawer');
-    const backdrop = document.getElementById('drawer-backdrop');
-    const qtyPlus = document.querySelector('.qty-plus');
-    const qtyMinus = document.querySelector('.qty-minus');
-    const qtyDisplay = document.querySelector('.qty-display');
-    const cartSubtotal = document.getElementById('cart-subtotal');
-    const addToCartBtn = document.getElementById('add-to-cart');
-
-    function openCart() {
-      cartDrawer.classList.add('open');
-      backdrop.style.display = 'block';
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeCart() {
-      cartDrawer.classList.remove('open');
-      backdrop.style.display = 'none';
-      document.body.style.overflow = '';
-    }
-
-    openCartBtn.addEventListener('click', openCart);
-    cartBtn.addEventListener('click', openCart);
-    backdrop.addEventListener('click', closeCart);
-
-    // Quantity controls
-    let quantity = 1;
-    const price = 79.99;
-
-    function updateTotal() {
-      const total = (price * quantity).toFixed(2);
-      cartSubtotal.textContent = `$${total}`;
-    }
-
-    qtyPlus.addEventListener('click', () => {
-      quantity++;
-      qtyDisplay.textContent = quantity;
-      updateTotal();
-    });
-
-    qtyMinus.addEventListener('click', () => {
-      if (quantity > 1) {
-        quantity--;
-        qtyDisplay.textContent = quantity;
-        updateTotal();
-      }
-    });
-
-    // Add to cart button
-    addToCartBtn.addEventListener('click', () => {
-      // Show success message
-      alert('Item added to cart!');
-    });
-  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="app.js"></script>
 </body>
 

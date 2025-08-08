@@ -14,29 +14,92 @@
 <body>
 
     <div class="car-about">
-        <header class="navbar-shop sticky">
-            <a href="#" class="logo"><img src="Logo/ta-logo-transparent.png" alt="TA">Labels</a>
+        <header class="navbar-shop sticky bg-white">
             <div class="menu-btn">
                 <div class="menu-btn__lines"></div>
             </div>
+            <a href="#" class="logo"><img src="Logo/ta-logo-black.png" alt="TA">Labels</a>
             <ul class="menu-items">
                 <li><a href="index.html" class="menu-item fs-5 after">Home</a></li>
                 <li><a href="shop.html" class="menu-item fs-5 after">Shop</a></li>
-                <li><a href="product.html" class="menu-item fs-5 after">Products</a></li>
-                <li><a href="about.html" class="menu-item fs-5 after">About</a></li>
+                <li class="dp-menu" onclick="sidebardrop()">
+                    <span href="" class="menu-item fs-5 after">Pages <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                    <ul class="sidebar-dropdown">
+                        <li><a href="signup.html" class="">Login/SignUp</a></li>
+                        <li><a href="product.html" class="">Product Details</a></li>
+                        <li><a href="shopcart.html" class="">Shopping Cart</a></li>
+                        <li><a href="checkout.html" class="">Checkout</a></li>
+                    </ul>
+                    <ul class="dropdown">
+                        <li><a href="signup.html" class="">Login/SignUp</a></li>
+                        <li><a href="product.html" class="">Product Details</a></li>
+                        <li><a href="shopcart.html" class="">Shopping Cart</a></li>
+                        <li><a href="checkout.html" class="">Checkout</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" class="menu-item fs-5 after active">About</a></li>
                 <li><a href="contact.html" class="menu-item fs-5 after">Contact</a></li>
             </ul>
+            <div class="nav-user d-flex">
+                <div class="cart-drawer-btn me-2">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <a href="signup.html"><i class="fa-regular fa-circle-user"></i></a>
+            </div>
         </header>
-
-        <div class="overlay"></div>
-
 
         <h1 class="bannerfwc">About Us</h1>
         <div class="bannerp">
             <p class="bannerpara">A specialist label creating a luxury essentials.</p>
         </div>
-        <button class="bannershopnow">SHOP NOW</button>
+        <button class="bannershopnow"><a href="shop.html">SHOP NOW</a></button>
+        
+        <div class="overlay"></div>
+    </div>
 
+    <!-- Cart drawer -->
+    <div class="cart-drawer cart-drawer-right">
+        <h4>Your Cart</h4>
+        <div class="cart-drawer-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="drawer-content">
+            <div class="cart-item mt-4">
+                <div class="cart-item-info">
+                    <div class="cart-item-image">
+                        <img src="Images/AVIF/pr-1.webp" alt="Classic Comfort Sweatshirt">
+                    </div>
+                    <div class="cart-item-actions">
+                        <button class="remove-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="quantity-controls">
+                            <button class="qty-btn qty-minus">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn qty-plus">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item-text">
+                    <h5>Classic Comfort Sweatshirt</h5>
+                    <p class="cart-item-meta">Size: S | Color: Sage</p>
+                    <p class="cart-item-price">$79.99</p>
+                </div>
+            </div>
+
+            <div class="cart-summary-section">
+                <span class="summary-label">Subtotal</span>
+                <span class="summary-value" id="cart-subtotal">$79.99</span>
+            </div>
+
+            <a href="checkout.html"><button class="btn1 btn-primary" style="width: 100%;">Checkout</button></a>
+        </div>
     </div>
 
 
@@ -59,12 +122,12 @@
     </div>
 
     <div class="wrapper container">
-        <div class="chef_heading" id="courses">
-        <h1 class="fs-1">Our Team</h1>
-    </div>
+        <div class="chef_heading">
+            <h1 class="fs-1">Our Team</h1>
+        </div>
 
         <div
-            class="carousel row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 justify-content-center ">
+            class="carousel row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 justify-content-center mb-5">
             <div class="card col ">
                 <div class="img">
                     <img src="https://t3.ftcdn.net/jpg/00/57/55/40/240_F_57554079_g3LhdDR5C0f2mc2ZxjFgsbb6WMqouUwQ.jpg"
@@ -111,8 +174,8 @@
                 <h2>Donald Horton</h2>
                 <span>App Designer</span>
             </div>
-            
-            
+
+
         </div>
     </div>
 
@@ -123,45 +186,46 @@
         <div class="container-xxl">
             <div class="footer_content row">
                 <div class="pay_cards col-3-md-3 col-sm-12">
-                    <!-- <img src="Img/footer-logo.png" alt=""> -->
-                    <h1 class="text-white">Ta Labels</h1>
+
+                    <h1 class="text-white"><img src="Logo/ta-logo-transparent.png" style="height: 80px; width: 80px;"
+                            alt="TA">Labels</h1>
                     <p>The customer is at the heart of our unique business model, which includes design</p>
                     <div class="footer_main_social">
                         <div class="social-icons mt-5">
-                            <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/ammaransari749" target="_blank" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/Ammar7409" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/itz_ammar_ansari_?igsh=MXFlanIxMHZlYnNoeQ%3D%3D" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ammar-ansari749" target="_blank" class="text-white"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="shopping1 col-3-md-3 col-sm-12">
-                    <h4>SHOPPING</h4>
-                    <a href="">
-                        <p>Clothing Store</p>
+                    <h4>Pages</h4>
+                    <a>
+                        <p>Home</p>
                     </a>
-                    <a href="">
-                        <p>Trending Shoes</p>
+                    <a>
+                        <p>Shop</p>
                     </a>
-                    <a href="">
-                        <p>Accessories</p>
+                    <a>
+                        <p>About Us</p>
                     </a>
-                    <a href="">
-                        <p>Sale</p>
+                    <a>
+                        <p>Checkout</p>
                     </a>
                 </div>
                 <div class="shopping2 col-3-md-3 col-sm-12">
-                    <h4>SHOPPING</h4>
-                    <a href="">
+                    <h4>Help</h4>
+                    <a>
                         <p>Contact Us</p>
                     </a>
-                    <a href="">
+                    <a>
                         <p>Payment Methods</p>
                     </a>
-                    <a href="">
+                    <a>
                         <p>Delivary</p>
                     </a>
-                    <a href="">
+                    <a>
                         <p>Return & Exchanges</p>
                     </a>
                 </div>
@@ -174,7 +238,7 @@
             </div>
 
             <div class="footer_copyright">
-                <p>Copyright © 2024&nbsp;2020 All rights reserved | This template is made with by Colorlib</p>
+                <p>Copyright © 2024&nbsp;2020 All rights reserved | Made by Ammar Tariq</p>
             </div>
         </div>
 

@@ -13,7 +13,8 @@
 
 <body>
 
-    <div class="car-contact">
+    <!-- Hero Start -->
+    <div class="car-product text-center">
         <header class="navbar-shop sticky bg-white">
             <div class="menu-btn">
                 <div class="menu-btn__lines"></div>
@@ -23,7 +24,7 @@
                 <li><a href="index.html" class="menu-item fs-5 after">Home</a></li>
                 <li><a href="shop.html" class="menu-item fs-5 after">Shop</a></li>
                 <li class="dp-menu" onclick="sidebardrop()">
-                    <span href="" class="menu-item fs-5 after">Pages <i class="fa-solid fa-angle-down"></i>
+                    <span href="" class="menu-item fs-5 after active">Pages <i class="fa-solid fa-angle-down"></i>
                     </span>
                     <ul class="sidebar-dropdown">
                         <li><a href="signup.html" class="">Login/SignUp</a></li>
@@ -39,7 +40,7 @@
                     </ul>
                 </li>
                 <li><a href="about.html" class="menu-item fs-5 after">About</a></li>
-                <li><a href="contact.html" class="menu-item fs-5 after active">Contact</a></li>
+                <li><a href="contact.html" class="menu-item fs-5 after">Contact</a></li>
             </ul>
             <div class="nav-user d-flex">
                 <div class="cart-drawer-btn me-2">
@@ -48,14 +49,110 @@
                 <a href="signup.html"><i class="fa-regular fa-circle-user"></i></a>
             </div>
         </header>
-        
-        <h1 class="bannerfwc mt-5">Contact Us </h1>
-        <div class="bannerp">
-            <p class="bannerpara">A specialist label creating a luxury essentials.</p>
+
+        <div class="container">
+            <h1 class="bannerfwc mt-4">Checkout</h1>
+            <div class="d-flex gap-1 justify-content-center">
+                <p>Home</p>><p>Pages</p>><p>Checkout</p>
+            </div>
         </div>
-        <button class="bannershopnow"><a href="shop.html">SHOP NOW</a></button>
 
         <div class="overlay"></div>
+    </div>
+    <!-- Hero End -->
+
+    <div class="pg-cart-container container-xxl py-5">
+        <div class="pg-cart">
+            <div class="pg-head">
+                <span>PRODUCT</span>
+                <span style="margin-left: 180px;">PRICE</span>
+                <span>QUANTITY</span>
+                <span>TOTAL</span>
+            </div>
+            <div class="pg-main">
+                <div class="pg-product d-flex align-items-center gap-3">
+                    <img src="Images/AVIF/pr-1.webp" alt="">
+                    <p>Faded Horizon Denim</p>
+                </div>
+                <p>Rs. 2000</p>
+                <div class="pg-add-minus">
+                    <button class="add-minus-hover" onclick="pgadd()">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button id="pg-add-minus-number">
+                        1
+                    </button>
+                    <button class="add-minus-hover" onclick="pgminus()">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                <p>Rs. 2000</p>
+            </div>
+            <div class="pg-main">
+                <div class="pg-product d-flex align-items-center gap-3">
+                    <img src="Images/AVIF/pr-7.webp" alt="">
+                    <p>Graphite Vibe Tee</p>
+                </div>
+                <p class="ms-4">Rs. 2000</p>
+                <div class="pg-add-minus">
+                    <button class="add-minus-hover" onclick="pgadd()">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button id="pg-add-minus-number">
+                        1
+                    </button>
+                    <button class="add-minus-hover" onclick="pgminus()">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                <p>Rs. 2000</p>
+            </div>
+            <div class="pg-main">
+                <div class="pg-product d-flex align-items-center gap-3">
+                    <img src="Images/AVIF/pr-8.webp" alt="">
+                    <p>Steel Pulse Jacket</p>
+                </div>
+                <p class="ms-4">Rs. 2000</p>
+                <div class="pg-add-minus">
+                    <button class="add-minus-hover" onclick="pgadd()">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button id="pg-add-minus-number">
+                        1
+                    </button>
+                    <button class="add-minus-hover" onclick="pgminus()">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                <p>Rs. 2000</p>
+            </div>
+            <div class="pg-continue d-flex justify-content-between py-3">
+                <a href=""><button class="btn btn-dark rounded-0 px-5" >UPDATE CART</button></a>
+                <a href="shop.html"><button class="btn btn-none rounded-0 px-5 " >CONTINUE SHOPPING</button></a>
+            </div>
+        </div>
+        <div class="pg-cart-right">
+            <div class="pg-coupon">
+                <h5>COUPON</h5>
+                <p>Enter Your Coupon Code If you Have One</p>
+                <div class="coupon-input d-flex justify-content-between">
+                    <input type="text" >
+                    <button class="btn btn-dark rounded-0">Apply</button>
+                </div>
+            </div>
+            <div class="pg-cart-total">
+            <h4>CART TOTAL</h4>
+            <div class="pg-subtotal d-flex justify-content-between my-4">
+                <span>Subtotal</span>
+                <span>Rs. 6000</span>
+            </div>
+            <div class="pg-amonut d-flex justify-content-between my-4">
+                <span>Total</span>
+                <span>Rs. 6000</span>
+            </div>
+            <a href="checkout.html"><button class="btn btn-dark rounded-0 w-100">Proceed to Checkout</button></a>
+        </div>
+        </div>
     </div>
 
     <!-- Cart drawer -->
@@ -102,39 +199,7 @@
         </div>
     </div>
 
-    <div class="container-xl">
-        <div class="contact_us">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.6490678471764!2d67.1573786751994!3d24.84167207794153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33b00609814f1%3A0xbd6daf57433c1d47!2sTa-Labels!5e0!3m2!1sen!2s!4v1750674371986!5m2!1sen!2s"
-                width="552" height="520" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <form>
-                <table>
-                    <tr>
-                        <td>
-                            <h2>Contact us</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" id="con-name" placeholder="Your Name"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="email" id="con-email" placeholder="Email"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" id="con-sub" placeholder="Subject"></td>
-                    </tr>
-                    <tr>
-                        <td><textarea id="con-textarea" placeholder="Message"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td><button class="contact-sm" id="send">Send Message</button></td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-    </div>
-
+    <!-- Footer Start -->
     <footer>
         <div class="container-xxl">
             <div class="footer_content row">
@@ -145,10 +210,14 @@
                     <p>The customer is at the heart of our unique business model, which includes design</p>
                     <div class="footer_main_social">
                         <div class="social-icons mt-5">
-                            <a href="https://www.facebook.com/ammaransari749" target="_blank" class="text-white"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://x.com/Ammar7409" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/itz_ammar_ansari_?igsh=MXFlanIxMHZlYnNoeQ%3D%3D" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/ammar-ansari749" target="_blank" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/ammaransari749" target="_blank" class="text-white"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/Ammar7409" target="_blank" class="text-white"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/itz_ammar_ansari_?igsh=MXFlanIxMHZlYnNoeQ%3D%3D"
+                                target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ammar-ansari749" target="_blank" class="text-white"><i
+                                    class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -199,7 +268,6 @@
     <!-- Footer End -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 
